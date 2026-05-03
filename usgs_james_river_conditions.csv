@@ -1,9 +1,4 @@
 datetime,date,time,gage_height_ft,discharge_cfs,risk_level,station,station_name
-2026-04-03 17:00,2026-04-03,17:00,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
-2026-04-03 17:15,2026-04-03,17:15,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
-2026-04-03 17:30,2026-04-03,17:30,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
-2026-04-03 17:45,2026-04-03,17:45,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
-2026-04-03 18:00,2026-04-03,18:00,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
 2026-04-03 18:15,2026-04-03,18:15,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
 2026-04-03 18:30,2026-04-03,18:30,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
 2026-04-03 18:45,2026-04-03,18:45,4.66,3430.0,Moderate,02037500,"James River Near Richmond, VA"
@@ -2876,3 +2871,7 @@ datetime,date,time,gage_height_ft,discharge_cfs,risk_level,station,station_name
 2026-05-03 15:30,2026-05-03,15:30,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
 2026-05-03 15:45,2026-05-03,15:45,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
 2026-05-03 16:00,2026-05-03,16:00,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
+2026-05-03 16:15,2026-05-03,16:15,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
+2026-05-03 16:30,2026-05-03,16:30,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
+2026-05-03 16:45,2026-05-03,16:45,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
+2026-05-03 17:00,2026-05-03,17:00,3.97,1790.0,Low,02037500,"James River Near Richmond, VA"
