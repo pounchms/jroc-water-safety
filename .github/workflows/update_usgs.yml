@@ -1,0 +1,33 @@
+name: Refresh USGS James River Data
+
+on:
+  schedule:
+    - cron: '0 11 * * *'  # Runs daily at 7am ET (11:00 UTC)
+  workflow_dispatch:       # Also allows manual trigger from GitHub
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pandas
+
+      - name: Run USGS fetch script
+        run: python usgs_james_river.py
+
+      - name: Commit and push updated CSV
+        run: |
+          git config user.email "pounchms@vcu.edu"
+          git config user.name "Matt"
+          git add usgs_james_river_conditions.csv
+          git diff --staged --quiet || git commit -m "Auto-refresh USGS data $(date -u '+%Y-%m-%d')"
+          git push
