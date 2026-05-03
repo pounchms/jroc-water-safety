@@ -1,0 +1,41 @@
+date,victim,age,section,location,gage,water_level,difficulty,cause,injury,factors,trip_type,boat_type,year,month,month_name,location_category,high_water,latitude,longitude,coord_precision
+1985-11-07,Two Teenaged Boys,17.0,,near Hueguenot Bridge,,Flood,,Other,Does not Apply,"High Water, Poor Planning, One Boat Trip",Private,Other,1985,11,November,Unknown/Unspecified,True,37.5107,-77.5648,precise
+1990-04-05,Andrew Sluiter,40.0,Near Howardsville,,,Medium,I,PFD Not Worn or Present,Does not Apply,One Boat Trip,Private,Other,1990,4,April,Unknown/Unspecified,False,37.6103,-78.6611,section-level
+1990-04-06,Andy Kasen,21.0,4. Upper James into Richmond,Williams Dam,,Medium,VI,Caught in Low Head Dam Hydraulic,Does not Apply,"Inexperience, One Boat Trip",Private,Other,1990,4,April,Downtown Richmond,False,37.5766,-77.5452,approximate
+1990-06-15,Unknown,,Lower - Downtown Richmond,Pipeline,,Low,II,Other,,Other,Private,Other,1990,6,June,Downtown Richmond,False,37.5273,-77.4598,precise
+2000-07-02,Alex Kitchen,28.0,Downtown,Bradshaw's Rock,,Medium,IV,Foot Entrapment,Does not Apply,"Inexperience, One Boat Trip",Private,Other,2000,7,July,Downtown Richmond,False,37.5318,-77.469,approximate
+2001-03-23,Garland Reece,48.0,Downtown,Hollywood Rapid,10 ft,High,III,Health Problem,Other,Cold Water,Private,Whitewater Kayak,2001,3,March,Downtown Richmond,True,37.5318,-77.4685,precise
+2005-04-09,Arthur Suarez,40.0,4. Upper James into Richmond,Williams Dam,8 ft,High,,Caught in Low Head Dam Hydraulic,Does not Apply,"Inexperience, One Boat Trip",Private,Other,2005,4,April,Downtown Richmond,True,37.5766,-77.5452,approximate
+2006-01-21,Karen Abse,50.0,5. Lower James through Richmond,Hollywood Rapid,8.3,High,IV,Pinned in Boat Against Strainer,Does not Apply,"Cold Water, High Water",Private,Whitewater Kayak,2006,1,January,Downtown Richmond,True,37.5318,-77.4685,precise
+2006-01-21,Unknown,,,,9 feet,High,,Other,,Other,Private,Other,2006,1,January,Unknown/Unspecified,True,,,unknown
+2006-06-30,Aaron Cooper,,2. Balcony Falls Run,Rockbridge County,,High,,Other,,Other,Private,Raft,2006,6,June,Balcony Falls,True,37.7833,-79.4333,approximate
+2006-06-30,Aaron Cooper,21.0,2. Balcony Falls Run,Balcony Falls,8' (Buchanan),High,II,PFD Not Worn or Present,Head Injury / Concussion,"High Water, Inadequate Equipment, One Boat Trip",Private,Raft,2006,6,June,Balcony Falls,True,37.6419,-79.5097,precise
+2006-07-05,Unknown,,,James River Park,,,I,Other,,Other,Private,Other,2006,7,July,Downtown Richmond,False,37.529,-77.47,approximate
+2006-07-05,Unknown,,,James River Park,,,I,Other,,Other,Private,Other,2006,7,July,Downtown Richmond,False,37.529,-77.47,approximate
+2006-07-05,Unknown,,,James River Park,,,I,Other,,Other,Private,Other,2006,7,July,Downtown Richmond,False,37.529,-77.47,approximate
+2006-07-05,Unknown,,,James River Park,,,I,Other,,Other,Private,Other,2006,7,July,Downtown Richmond,False,37.529,-77.47,approximate
+2006-07-05,Unknown,,,James River Park,,,I,Other,,Other,Private,Other,2006,7,July,Downtown Richmond,False,37.529,-77.47,approximate
+2006-07-05,Unknown,,,James River Park,,,I,Other,,Other,Private,Other,2006,7,July,Downtown Richmond,False,37.529,-77.47,approximate
+2007-12-29,Jerry Nutter,56.0,5. Lower James through Richmond,Pipeline Rapid,,Low,III,Impact/Trauma,Head Injury / Concussion,,Private,Whitewater Kayak,2007,12,December,Downtown Richmond,False,37.5273,-77.4598,precise
+2007-12-29,Jerry Nutter,56.0,5. Lower James through Richmond,Pipeline Rapid,3390cfs 4.7ft,Low,III,Impact/Trauma,"Head Injury / Concussion, Hypothermia",Cold Water,Private,Whitewater Kayak,2007,12,December,Downtown Richmond,False,37.5273,-77.4598,precise
+2008-04-30,Unknown,,2. Balcony Falls Run,,8.2 (9000 cfs),High,IV,Other,,Other,Private,Other,2008,4,April,Balcony Falls,True,37.6419,-79.5097,section-level
+2009-06-19,Simon Knopp,76.0,02. Glen Wilton to Gala,,,High,,Swim into Strainer,Does not Apply,Other,Private,Raft,2009,6,June,Upper/Remote James,True,37.7914,-79.8267,section-level
+2010-07-17,Unknown,,5. Lower James through Richmond,runoff below hollywood,4.06,Low,,Pinned in Boat Against Strainer,,,Private,Other,2010,7,July,Downtown Richmond,False,37.531,-77.468,approximate
+2010-07-20,Unidentified Man,,5. Lower James through Richmond,Hollywood Rapid,,,,Foot Entrapment,Near Drowning,Other,Private,Other,2010,7,July,Downtown Richmond,False,37.5318,-77.4685,precise
+2013-05-20,Moises Dieguez,,5. Lower James through Richmond,,,Medium,,Other,Other,Other,Private,Whitewater Kayak,2013,5,May,Downtown Richmond,False,37.5318,-77.4685,section-level
+2013-07-08,Hope F. Stoeckel,69.0,,Near Percivals Island in Amherst County below Lynchburg,,High,,Flush Drowning,Does not Apply,Other,Private,Other,2013,7,July,Upper/Remote James,True,37.4167,-79.1583,approximate
+2014-05-19,8 unidentified tubers,,,in Rockbridge County,,,,Impact/Trauma,Other,Other,Private,Other,2014,5,May,Upper/Remote James,False,37.7833,-79.4333,approximate
+2016-06-05,Grant Manukynats,29.0,2. Balcony Falls Run,Jump Rock,,Medium,III,PFD Not Worn or Present,Does not Apply,Other,Private,Other,2016,6,June,Balcony Falls,False,37.6419,-79.509,approximate
+2017-05-29,Unidentified Man,,3. Snowdon (Route 501/130) to Six Mile,"Reusens Dam in Lynchburg, VA",,,,Caught in Low Head Dam Hydraulic,Does not Apply,Solo Paddling,Private,Other,2017,5,May,Upper/Remote James,False,37.3842,-79.1797,precise
+2017-06-20,Deborah A. Stacil,58.0,,"Near Buckingham, VA",,,I,Pinned in Boat Against Strainer,Does not Apply,Other,Private,Other,2017,6,June,Upper/Remote James,False,37.55,-78.55,approximate
+2018-02-12,Christian Wood,18.0,5. Lower James through Richmond,Hollywood Rapid,15.9 feet,Flood,IV,Pinned in Boat Against Strainer,Head Injury / Concussion,"Cold Water, High Water",Private,Whitewater Kayak,2018,2,February,Downtown Richmond,True,37.5318,-77.4685,precise
+2020-05-31,Holly Padgett,29.0,2. Balcony Falls Run,Balcony Falls,4800 cfs,High,II,PFD Not Worn or Present,Does not Apply,Inadequate Equipment,Private,Other,2020,5,May,Balcony Falls,True,37.6419,-79.5097,precise
+2020-06-02,Joshua B. Jennings,45.0,4. Upper James into Richmond,Z-Dam,,Medium,,Caught in Low Head Dam Hydraulic,Does not Apply,Inadequate Equipment,Private,Other,2020,6,June,Downtown Richmond,False,37.5766,-77.5452,approximate
+2020-06-08,Unidentified Woman,,5. Lower James through Richmond,,,Low,III,Other,Does not Apply,Solo Paddling,Private,Other,2020,6,June,Downtown Richmond,False,37.5318,-77.4685,section-level
+2022-05-30,Lauren E. Winstead,23.0,4. Upper James into Richmond,Bosher's Dam,9 feet,High,,Caught in Low Head Dam Hydraulic,Does not Apply,High Water,Private,Other,2022,5,May,Downtown Richmond,True,37.5661,-77.5569,precise
+2022-07-01,Unidentified Man,70.0,Through downtown Richmond,fishladder rapid,4.2 feet at Richmond,Low,III+,Health Problem,Heart Attack / Heart Failure,Other,Commercial,Raft,2022,7,July,Downtown Richmond,False,37.5378,-77.4548,approximate
+2022-11-12,Tim Wiley,61.0,2. Glasgow to Snowdon,,4000 cfs Buchanan,High,II+,Other,Does not Apply,"Cold Water, High Water, Solo Paddling",Private,Raft,2022,11,November,Upper/Remote James,True,37.6364,-79.4483,section-level
+2023-05-02,Leah Patterson,26.0,Through Richmond,Hollywood Rapid,8.5 feet at Richmond,High,IV,Swim into Strainer,Does not Apply,Other,Private,Raft,2023,5,May,Downtown Richmond,True,37.5318,-77.4685,precise
+2023-12-13,Unidentified Man,,5. Lower James through Richmond,Hollywood Rapid,8.06 ft,High,III+,Pinned in Boat Against Strainer,Does not Apply,Other,Private,Whitewater Kayak,2023,12,December,Downtown Richmond,True,37.5318,-77.4685,precise
+2024-11-23,Octavia Richardson,20.0,,Below mouth of the Maury River,,Low,II,PFD Not Worn or Present,Hypothermia,"Cold Water, Inadequate Equipment, Inexperience",Private,Other,2024,11,November,Upper/Remote James,False,37.6364,-79.4483,approximate
+2024-11-28,Unidentified Woman,20.0,,Balcony Falls,,,III,PFD Not Worn or Present,Does not Apply,"Inadequate Equipment, Inexperience",Private,Other,2024,11,November,Balcony Falls,False,37.6419,-79.5097,precise
