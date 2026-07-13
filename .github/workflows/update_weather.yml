@@ -1,8 +1,8 @@
-name: Refresh USGS James River Data
+name: Refresh NWS Weather Data
 
 on:
   schedule:
-    - cron: '0 11 * * *'  # Runs daily at 7am ET (11:00 UTC)
+    - cron: '30 11 * * *'  # Runs daily at 7:30am ET, just after the other two
   workflow_dispatch:       # Also allows manual trigger from GitHub
 
 jobs:
@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas gspread google-auth
 
-      - name: Run USGS fetch script
-        run: python usgs_james_river.py
+      - name: Run NWS weather fetch script
+        run: python pipeline/nws_weather.py
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.email "pounchms@vcu.edu"
           git config user.name "Matt"
-          git add usgs_james_river_conditions.csv
-          git diff --staged --quiet || git commit -m "Auto-refresh USGS data $(date -u '+%Y-%m-%d')"
+          git add nws_weather_conditions.csv
+          git diff --staged --quiet || git commit -m "Auto-refresh weather data $(date -u '+%Y-%m-%d')"
           git push
