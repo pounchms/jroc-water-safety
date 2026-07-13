@@ -127,7 +127,13 @@ def write_to_google_sheets(df: pd.DataFrame):
     sheet = client.open_by_key(sheet_id).worksheet(SHEET_TAB)
 
     sheet.clear()
-    sheet.update([df.columns.tolist()] + df.values.tolist())
+    # discharge_cfs can be None when the API misses a reading, which becomes
+    # NaN in the numeric column -- gspread's request JSON breaks on a raw NaN
+    # even without this fix ever having been hit yet on this script, so this
+    # is preventative, not a confirmed-live bug like the other two scripts
+    import numpy as np
+    safe_df = df.replace([np.inf, -np.inf], np.nan).fillna("")
+    sheet.update([safe_df.columns.tolist()] + safe_df.astype(str).values.tolist())
 
     print(f"Google Sheet updated: tab '{SHEET_TAB}' ({len(df)} rows)")
 

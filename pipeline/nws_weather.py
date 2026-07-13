@@ -155,7 +155,14 @@ def write_to_google_sheets(df: pd.DataFrame):
     client = gspread.authorize(creds)
     sheet = client.open_by_key(sheet_id).worksheet(SHEET_TAB)
     sheet.clear()
-    sheet.update([df.columns.tolist()] + df.astype(str).values.tolist())
+    # NaN/inf must be scrubbed BEFORE the string cast -- astype(str) alone still
+    # let a bare "Out of range float values are not JSON compliant" error through
+    # from gspread's request serialization (missing NWS readings produce None ->
+    # NaN in numeric columns; fillna("") removes them outright instead of
+    # relying on stringifying them safely)
+    import numpy as np
+    safe_df = df.replace([np.inf, -np.inf], np.nan).fillna("")
+    sheet.update([safe_df.columns.tolist()] + safe_df.astype(str).values.tolist())
     print(f"Google Sheet updated: tab '{SHEET_TAB}' ({len(df)} rows)")
 
 

@@ -99,7 +99,12 @@ def write_to_google_sheets(df: pd.DataFrame):
     client = gspread.authorize(creds)
     sheet = client.open_by_key(sheet_id).worksheet(SHEET_TAB)
     sheet.clear()
-    sheet.update([df.columns.tolist()] + df.astype(str).values.tolist())
+    # same NaN-leak fix as nws_weather.py -- upstream_discharge_cfs is None
+    # whenever the API misses a reading, which becomes NaN in the numeric
+    # column and breaks gspread's request JSON even after astype(str)
+    import numpy as np
+    safe_df = df.replace([np.inf, -np.inf], np.nan).fillna("")
+    sheet.update([safe_df.columns.tolist()] + safe_df.astype(str).values.tolist())
     print(f"Google Sheet updated: tab '{SHEET_TAB}' ({len(df)} rows)")
 
 
