@@ -24,10 +24,14 @@ Outputs:
 
 import json
 import os
+import sys
 from datetime import datetime
 
 import pandas as pd
 import requests
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from join_features import RAPID_RISE_THRESHOLD_FT
 
 STATION = "02026000"  # James River at Bent Creek, VA
 PERIOD = "P30D"
@@ -38,6 +42,32 @@ API_URL = (
     f"https://waterservices.usgs.gov/nwis/iv/"
     f"?sites={STATION}&parameterCd=00065,00060&format=json&period={PERIOD}"
 )
+
+
+def add_rise_flag(df: pd.DataFrame) -> pd.DataFrame:
+    """Adds delta_24h / upstream_rapid_rise_flag to the upstream series, same
+    approach as usgs_james_river.py's add_risk_index_columns: for each row,
+    look up the reading closest to 24h earlier (30-min tolerance) and flag a
+    rapid rise. This is what compute_daily_risk_index.py reads (at a 1-day
+    lag) for the upstream-surge bonus -- see upstream_lag.py for why lag=1
+    day, not this script's own same-day reading.
+    """
+    d = df.copy()
+    d["dt"] = pd.to_datetime(d["datetime"])
+    d = d.sort_values("dt").reset_index(drop=True)
+
+    lookup = d[["dt", "upstream_gage_ft"]].rename(columns={"upstream_gage_ft": "gage_24h_ago"})
+    lookup["dt"] = lookup["dt"] + pd.Timedelta(hours=24)
+    matched = pd.merge_asof(
+        d[["dt"]], lookup.sort_values("dt"), on="dt",
+        direction="nearest", tolerance=pd.Timedelta(minutes=30),
+    )
+    d["gage_24h_ago"] = matched["gage_24h_ago"]
+    d["delta_24h"] = (d["upstream_gage_ft"] - d["gage_24h_ago"]).round(2)
+    d["upstream_rapid_rise_flag"] = d["delta_24h"] >= RAPID_RISE_THRESHOLD_FT
+    d.loc[d["gage_24h_ago"].isna(), "upstream_rapid_rise_flag"] = False
+
+    return d.drop(columns=["dt", "gage_24h_ago"])
 
 
 def fetch_upstream_data() -> pd.DataFrame:
@@ -79,6 +109,7 @@ def fetch_upstream_data() -> pd.DataFrame:
         })
 
     df = pd.DataFrame(rows)
+    df = add_rise_flag(df)
     df.to_csv(OUTPUT_FILE, index=False)
     print(f"CSV written: {OUTPUT_FILE} ({len(rows)} records)")
     write_to_google_sheets(df)

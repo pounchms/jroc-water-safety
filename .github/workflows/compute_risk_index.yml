@@ -1,0 +1,28 @@
+name: Compute Full Risk Index
+
+on:
+  schedule:
+    - cron: '45 11 * * *'  # Runs daily at 7:45am ET (11:45 UTC) -- after river (7:00), upstream (7:15), weather (7:30)
+  workflow_dispatch:       # Also allows manual trigger from GitHub
+
+jobs:
+  compute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pandas gspread google-auth
+
+      - name: Run risk index combiner
+        run: python pipeline/compute_daily_risk_index.py
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
