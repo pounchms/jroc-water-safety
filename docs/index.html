@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James River Conditions — Richmond</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #1c1712;
+    --panel: #2a221a;
+    --panel-border: #4a3c2c;
+    --text: #f2ece2;
+    --text-dim: #b8ab98;
+    --brown: #8a5a30;
+    --brown-light: #c48a4f;
+    --low: #4a9d5f;
+    --moderate: #d4a13d;
+    --high: #d4703d;
+    --flood: #c0392b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; }
+  header { margin-bottom: 24px; }
+  header h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  header p { margin: 0; color: var(--text-dim); font-size: 0.95rem; }
+  .updated { font-size: 0.8rem; color: var(--text-dim); margin-top: 8px; }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .banner .score {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #1c1712;
+  }
+  .banner .level { font-size: 1.3rem; font-weight: 600; margin-bottom: 6px; }
+  .banner .reasons { color: var(--text-dim); font-size: 0.9rem; }
+  .banner .reasons ul { margin: 4px 0 0; padding-left: 18px; }
+
+  .score.Low { background: var(--low); }
+  .score.Moderate { background: var(--moderate); }
+  .score.High { background: var(--high); }
+  .score.Flood { background: var(--flood); }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .card .label { font-size: 0.78rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card .value { font-size: 1.4rem; font-weight: 600; margin-top: 4px; }
+  .card .sub { font-size: 0.8rem; color: var(--text-dim); margin-top: 2px; }
+
+  .chart-panel {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .chart-panel h2 { font-size: 1rem; margin: 0 0 12px; color: var(--text-dim); font-weight: 600; }
+
+  footer {
+    border-top: 1px solid var(--panel-border);
+    padding-top: 16px;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
+  footer p { margin: 0 0 8px; }
+  footer a { color: var(--brown-light); }
+  .emergency {
+    background: rgba(192, 57, 43, 0.15);
+    border: 1px solid var(--flood);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 0.88rem;
+  }
+  .loading, .error { color: var(--text-dim); padding: 40px 0; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>James River Conditions — Richmond</h1>
+    <p>An informational tool built for the James River Outdoor Coalition (JROC) and Richmond Fire Department — VCU MDA practicum project.</p>
+  </header>
+
+  <div id="content">
+    <div class="loading">Loading current conditions…</div>
+  </div>
+
+  <footer>
+    <div class="emergency">If you or someone else is in danger on the river right now, call <strong>911</strong>. This page is an informational tool, not an emergency alert system, and is not monitored in real time by any agency.</div>
+    <p>Data sources: <a href="https://waterdata.usgs.gov/monitoring-location/USGS-02037500/" target="_blank" rel="noopener">USGS gauge 02037500</a> (Richmond) and <a href="https://waterdata.usgs.gov/monitoring-location/USGS-02026000/" target="_blank" rel="noopener">02026000</a> (Bent Creek), plus NWS weather observations. Refreshed daily via automated pipeline.</p>
+    <p>The risk score is a rule-based estimate built by a student team, not an official flood or safety forecast. For the National Weather Service's official river forecast, see <a href="https://water.weather.gov/ahps2/hydrograph.php?wfo=akq&gage=rmdv2" target="_blank" rel="noopener">NWS AHPS</a>. For general river safety guidance, see <a href="https://jamesriverpark.org/riversafety/" target="_blank" rel="noopener">Friends of James River Park</a>.</p>
+  </footer>
+</div>
+
+<script>
+async function loadData() {
+  const content = document.getElementById('content');
+  try {
+    const res = await fetch('./data/latest.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    render(data);
+  } catch (err) {
+    content.innerHTML = '<div class="error">Couldn\'t load current conditions (' + err.message + '). Data updates daily — try refreshing in a few minutes, or check back later.</div>';
+  }
+}
+
+function render(data) {
+  const c = data.current;
+  const level = c.risk_index_level || 'Low';
+
+  const reasonsHtml = (c.risk_index_reasons || [])
+    .map(r => '<li>' + escapeHtml(r) + '</li>')
+    .join('');
+
+  const html = `
+    <div class="banner">
+      <div class="score ${level}">${c.risk_index_1_10}</div>
+      <div>
+        <div class="level">${level} risk</div>
+        <div class="reasons"><ul>${reasonsHtml}</ul></div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="label">Gage height</div>
+        <div class="value">${fmt(c.gage_height_ft, 1)} ft</div>
+        <div class="sub">${fmt(c.discharge_cfs, 0)} cfs</div>
+      </div>
+      <div class="card">
+        <div class="label">Rain (24h)</div>
+        <div class="value">${fmt(c.precip_24h_in, 1)} in</div>
+        <div class="sub">${c.air_temp_f != null ? Math.round(c.air_temp_f) + '°F' : ''}</div>
+      </div>
+      <div class="card">
+        <div class="label">Wind</div>
+        <div class="value">${fmt(c.wind_mph, 0)} mph</div>
+      </div>
+      <div class="card">
+        <div class="label">Upstream (Bent Creek)</div>
+        <div class="value">${c.upstream_rapid_rise_flag ? 'Rising fast' : 'Normal'}</div>
+        <div class="sub">~1 day lead time on Richmond</div>
+      </div>
+    </div>
+
+    <div class="chart-panel">
+      <h2>Gage height — last ${data.trend.length} days</h2>
+      <canvas id="trendChart" height="90"></canvas>
+    </div>
+
+    <div style="font-size:0.8rem;color:var(--text-dim);margin-bottom:20px;">
+      Last updated ${escapeHtml(c.datetime)} (river reading) · page data generated ${escapeHtml(data.generated_at_utc)} UTC
+    </div>
+  `;
+
+  document.getElementById('content').innerHTML = html;
+  drawChart(data.trend);
+}
+
+function drawChart(trend) {
+  const ctx = document.getElementById('trendChart');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: trend.map(p => p.date.slice(5)),
+      datasets: [{
+        label: 'Gage height (ft)',
+        data: trend.map(p => p.gage_height_ft),
+        borderColor: '#c48a4f',
+        backgroundColor: 'rgba(196,138,79,0.15)',
+        fill: true,
+        tension: 0.25,
+        pointRadius: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#b8ab98' }, grid: { color: '#4a3c2c' } },
+        y: { ticks: { color: '#b8ab98' }, grid: { color: '#4a3c2c' }, title: { display: true, text: 'ft', color: '#b8ab98' } },
+      }
+    }
+  });
+}
+
+function fmt(v, decimals) {
+  if (v === null || v === undefined) return '—';
+  return Number(v).toFixed(decimals);
+}
+
+function escapeHtml(s) {
+  const div = document.createElement('div');
+  div.textContent = s == null ? '' : String(s);
+  return div.innerHTML;
+}
+
+loadData();
+</script>
+</body>
+</html>
