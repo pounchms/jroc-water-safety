@@ -39,4 +39,8 @@ jobs:
           git config user.name "Matt"
           git add docs/data/latest.json
           git diff --staged --quiet || git commit -m "Auto-refresh site data $(date -u '+%Y-%m-%d')"
-          git push
+          # another workflow (river/upstream/weather) may have pushed while this job
+          # was running -- rebase onto whatever's new before pushing, retrying once
+          # more if a second race happens in that same window
+          git pull --rebase origin master
+          git push || (git pull --rebase origin master && git push)
