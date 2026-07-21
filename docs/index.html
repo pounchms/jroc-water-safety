@@ -9,13 +9,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   :root {
-    --bg: #1c1712;
-    --panel: #2a221a;
-    --panel-border: #4a3c2c;
-    --text: #f2ece2;
-    --text-dim: #b8ab98;
+    --bg: #12181c;
+    --panel: #1b2429;
+    --panel-border: #2e3d43;
+    --text: #eef2f0;
+    --text-dim: #99a8ad;
     --brown: #8a5a30;
     --brown-light: #c48a4f;
+    --water: #4a9dc0;
+    --water-dim: rgba(74,157,192,0.1);
     --low: #4a9d5f;
     --moderate: #d4a13d;
     --high: #d4703d;
@@ -30,11 +32,37 @@
     line-height: 1.5;
   }
   .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; }
-  header { margin-bottom: 24px; display: flex; align-items: center; gap: 16px; }
+  header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--brown-light);
+  }
   header img.logo { width: 64px; height: 64px; flex-shrink: 0; object-fit: contain; }
   header h1 { font-size: 1.6rem; margin: 0 0 4px; }
   header p { margin: 0; color: var(--text-dim); font-size: 0.95rem; }
   .updated { font-size: 0.8rem; color: var(--text-dim); margin-top: 8px; }
+
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .legend .pill {
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.78rem;
+    color: #1c1712;
+    line-height: 1.35;
+  }
+  .legend .pill strong { display: block; font-size: 0.82rem; }
+  .legend .pill.Low { background: var(--low); }
+  .legend .pill.Moderate { background: var(--moderate); }
+  .legend .pill.High { background: var(--high); }
+  .legend .pill.Flood { background: var(--flood); }
 
   .banner {
     display: flex;
@@ -79,7 +107,8 @@
     border-radius: 10px;
     padding: 14px 16px;
   }
-  .card .label { font-size: 0.78rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card .label { font-size: 0.78rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; display: flex; align-items: center; gap: 6px; }
+  .card .label svg { flex-shrink: 0; color: var(--water); }
   .card .value { font-size: 1.4rem; font-weight: 600; margin-top: 4px; }
   .card .sub { font-size: 0.8rem; color: var(--text-dim); margin-top: 2px; }
 
@@ -138,20 +167,20 @@
     border: 1px solid var(--panel-border);
     border-radius: 8px;
     padding: 10px 12px;
-    background: rgba(196,138,79,0.08);
+    background: var(--water-dim);
   }
-  .flow-bonuses .bonus .amt { color: var(--brown-light); font-weight: 700; font-size: 1rem; }
+  .flow-bonuses .bonus .amt { color: var(--water); font-weight: 700; font-size: 1rem; }
   .flow-bonuses .bonus .name { font-weight: 600; font-size: 0.85rem; margin: 2px 0; }
   .flow-bonuses .bonus .desc { font-size: 0.78rem; color: var(--text-dim); }
 
   .flow-total {
     text-align: center;
-    border: 1px solid var(--brown-light);
+    border: 1px solid var(--water);
     border-radius: 8px;
     padding: 12px;
     font-size: 0.9rem;
     color: var(--text);
-    background: rgba(196,138,79,0.08);
+    background: var(--water-dim);
   }
   .flow-total strong { font-size: 1.1rem; }
   .method-note { font-size: 0.78rem; color: var(--text-dim); margin: 14px 0 0; }
@@ -163,7 +192,7 @@
     color: var(--text-dim);
   }
   footer p { margin: 0 0 8px; }
-  footer a { color: var(--brown-light); }
+  footer a { color: var(--water); }
   .emergency {
     background: rgba(192, 57, 43, 0.15);
     border: 1px solid var(--flood);
@@ -184,6 +213,13 @@
       <p>An informational tool built for the James River Outdoor Coalition (JROC) and Richmond Fire Department.</p>
     </div>
   </header>
+
+  <div class="legend">
+    <div class="pill Low"><strong>Low</strong>Normal conditions</div>
+    <div class="pill Moderate"><strong>Moderate</strong>Use caution, check conditions before entering</div>
+    <div class="pill High"><strong>High</strong>Experienced only — many stay out</div>
+    <div class="pill Flood"><strong>Flood</strong>Stay out of the water, closures likely</div>
+  </div>
 
   <div id="content">
     <div class="loading">Loading current conditions…</div>
@@ -225,6 +261,13 @@
 </div>
 
 <script>
+const ICONS = {
+  wave: '<svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 11c1.7-2.2 3.3-2.2 5 0s3.3 2.2 5 0 3.3-2.2 5-0"/><path d="M1 7c1.7-2.2 3.3-2.2 5 0s3.3 2.2 5 0 3.3-2.2 5-0" opacity="0.5"/></svg>',
+  drop: '<svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2c3 4 5.5 6.8 5.5 9.5a5.5 5.5 0 1 1-11 0C3.5 8.8 6 6 9 2z"/></svg>',
+  wind: '<svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1.5 5.5h9a2 2 0 1 0-1.8-2.8"/><path d="M1.5 9.5h11.7a2.2 2.2 0 1 1-2 3.1"/><path d="M1.5 13.5h6.5"/></svg>',
+  trend: '<svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13l4.5-4.5L9.5 11.5 16 5"/><path d="M11.5 5H16v4.5"/></svg>',
+};
+
 async function loadData() {
   const content = document.getElementById('content');
   try {
@@ -256,21 +299,21 @@ function render(data) {
 
     <div class="cards">
       <div class="card">
-        <div class="label">Gage height</div>
+        <div class="label">${ICONS.wave}Gage height</div>
         <div class="value">${fmt(c.gage_height_ft, 1)} ft</div>
         <div class="sub">${fmt(c.discharge_cfs, 0)} cfs</div>
       </div>
       <div class="card">
-        <div class="label">Rain (24h)</div>
+        <div class="label">${ICONS.drop}Rain (24h)</div>
         <div class="value">${fmt(c.precip_24h_in, 1)} in</div>
         <div class="sub">${c.air_temp_f != null ? Math.round(c.air_temp_f) + '°F' : ''}</div>
       </div>
       <div class="card">
-        <div class="label">Wind</div>
+        <div class="label">${ICONS.wind}Wind</div>
         <div class="value">${fmt(c.wind_mph, 0)} mph</div>
       </div>
       <div class="card">
-        <div class="label">Upstream (Bent Creek)</div>
+        <div class="label">${ICONS.trend}Upstream (Bent Creek)</div>
         <div class="value">${c.upstream_rapid_rise_flag ? 'Rising fast' : 'Normal'}</div>
         <div class="sub">~1 day lead time on Richmond</div>
       </div>
@@ -299,8 +342,8 @@ function drawChart(trend) {
       datasets: [{
         label: 'Gage height (ft)',
         data: trend.map(p => p.gage_height_ft),
-        borderColor: '#c48a4f',
-        backgroundColor: 'rgba(196,138,79,0.15)',
+        borderColor: '#4a9dc0',
+        backgroundColor: 'rgba(74,157,192,0.15)',
         fill: true,
         tension: 0.25,
         pointRadius: 2,
@@ -310,8 +353,8 @@ function drawChart(trend) {
       responsive: true,
       plugins: { legend: { display: false } },
       scales: {
-        x: { ticks: { color: '#b8ab98' }, grid: { color: '#4a3c2c' } },
-        y: { ticks: { color: '#b8ab98' }, grid: { color: '#4a3c2c' }, title: { display: true, text: 'ft', color: '#b8ab98' } },
+        x: { ticks: { color: '#99a8ad' }, grid: { color: '#2e3d43' } },
+        y: { ticks: { color: '#99a8ad' }, grid: { color: '#2e3d43' }, title: { display: true, text: 'ft', color: '#99a8ad' } },
       }
     }
   });
