@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>James River Conditions — Richmond</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   :root {
@@ -28,7 +30,8 @@
     line-height: 1.5;
   }
   .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; }
-  header { margin-bottom: 24px; }
+  header { margin-bottom: 24px; display: flex; align-items: center; gap: 16px; }
+  header img.logo { width: 64px; height: 64px; flex-shrink: 0; object-fit: contain; }
   header h1 { font-size: 1.6rem; margin: 0 0 4px; }
   header p { margin: 0; color: var(--text-dim); font-size: 0.95rem; }
   .updated { font-size: 0.8rem; color: var(--text-dim); margin-top: 8px; }
@@ -89,6 +92,70 @@
   }
   .chart-panel h2 { font-size: 1rem; margin: 0 0 12px; color: var(--text-dim); font-weight: 600; }
 
+  .method-panel {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .method-panel h2 { font-size: 1rem; margin: 0 0 4px; color: var(--text); font-weight: 600; }
+  .method-panel .method-sub { font-size: 0.85rem; color: var(--text-dim); margin: 0 0 18px; }
+  .flow-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin: 0 0 8px; }
+  .flow-tier {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .flow-tier .tile {
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #1c1712;
+    font-size: 0.8rem;
+  }
+  .flow-tier .tile .range { font-weight: 600; display: block; }
+  .flow-tier .tile .score { font-size: 1.3rem; font-weight: 700; display: block; margin: 2px 0; }
+  .flow-tier .tile.Low { background: var(--low); }
+  .flow-tier .tile.Moderate { background: var(--moderate); }
+  .flow-tier .tile.High { background: var(--high); }
+  .flow-tier .tile.Flood { background: var(--flood); }
+
+  .flow-plus {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    margin: 4px 0;
+  }
+
+  .flow-bonuses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .flow-bonuses .bonus {
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: rgba(196,138,79,0.08);
+  }
+  .flow-bonuses .bonus .amt { color: var(--brown-light); font-weight: 700; font-size: 1rem; }
+  .flow-bonuses .bonus .name { font-weight: 600; font-size: 0.85rem; margin: 2px 0; }
+  .flow-bonuses .bonus .desc { font-size: 0.78rem; color: var(--text-dim); }
+
+  .flow-total {
+    text-align: center;
+    border: 1px solid var(--brown-light);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 0.9rem;
+    color: var(--text);
+    background: rgba(196,138,79,0.08);
+  }
+  .flow-total strong { font-size: 1.1rem; }
+  .method-note { font-size: 0.78rem; color: var(--text-dim); margin: 14px 0 0; }
+
   footer {
     border-top: 1px solid var(--panel-border);
     padding-top: 16px;
@@ -111,12 +178,43 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>James River Conditions — Richmond</h1>
-    <p>An informational tool built for the James River Outdoor Coalition (JROC) and Richmond Fire Department — VCU MDA practicum project.</p>
+    <img class="logo" src="assets/jroc-logo.webp" alt="James River Outdoor Coalition logo">
+    <div>
+      <h1>James River Conditions — Richmond</h1>
+      <p>An informational tool built for the James River Outdoor Coalition (JROC) and Richmond Fire Department.</p>
+    </div>
   </header>
 
   <div id="content">
     <div class="loading">Loading current conditions…</div>
+  </div>
+
+  <div class="method-panel">
+    <h2>How the risk score is calculated</h2>
+    <p class="method-sub">A rule-based score, 1–10: a base level from the current river height, plus bonus points for specific danger patterns. Nothing here is a black box — every point is traceable to a rule below.</p>
+
+    <p class="flow-label">1 — Base score, from gage height at Richmond</p>
+    <div class="flow-tier">
+      <div class="tile Low"><span class="range">Under 4 ft</span><span class="score">1</span>Low</div>
+      <div class="tile Moderate"><span class="range">4–8 ft</span><span class="score">3</span>Moderate</div>
+      <div class="tile High"><span class="range">8–14 ft</span><span class="score">5</span>High</div>
+      <div class="tile Flood"><span class="range">14 ft+</span><span class="score">6</span>Flood</div>
+    </div>
+
+    <div class="flow-plus">+</div>
+
+    <p class="flow-label">2 — Bonus points, added when a pattern is detected</p>
+    <div class="flow-bonuses">
+      <div class="bonus"><span class="amt">+2</span><div class="name">Rapid rise</div><div class="desc">River rose 1.5 ft or more in the last 24h</div></div>
+      <div class="bonus"><span class="amt">+2</span><div class="name">Deceptive calm</div><div class="desc">≤6 ft but still rose 1 ft+ in 24h — looks safe, isn't</div></div>
+      <div class="bonus"><span class="amt">+2</span><div class="name">Upstream surge</div><div class="desc">Bent Creek gauge (60mi upstream) rising fast, ~1 day lead time</div></div>
+      <div class="bonus"><span class="amt">+1</span><div class="name">Heavy rain</div><div class="desc">1 in.+ of rain locally in the last 24h</div></div>
+      <div class="bonus"><span class="amt">+1</span><div class="name">High wind</div><div class="desc">Sustained wind 20 mph or more</div></div>
+    </div>
+
+    <div class="flow-total">Base + bonuses, capped at <strong>10</strong> → the risk index shown above</div>
+
+    <p class="method-note">These breakpoints are defensible starting estimates, not yet validated against real incident data (Richmond Fire's incident records aren't available to this project yet — see the footer). Treat the score as a rule-based estimate, not an official forecast.</p>
   </div>
 
   <footer>
