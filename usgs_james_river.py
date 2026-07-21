@@ -9,14 +9,40 @@ Outputs:
 
 Google Sheets write requires GOOGLE_CREDENTIALS (service account JSON)
 and GOOGLE_SHEET_ID env vars. See setup_google_sheets.md.
+
+Risk scoring: this script writes TWO risk columns side by side.
+  - risk_level: the original simple gage-height-only bucket (kept for
+    backward compatibility with anything already reading it).
+  - risk_index_1_10 / risk_index_level / risk_index_reasons: the fuller,
+    rule-based score from pipeline/risk_index.py, using this script's own
+    15-min series to detect rapid-rise / deceptive-calm (the "looks calm
+    but is rising fast" danger pattern the project is built around).
+    NOT YET INCLUDED: the weather and upstream-gauge bonuses. Those live
+    in separate Sheet tabs ("Weather Live", "Upstream Live") written by
+    nws_weather.py / usgs_upstream.py on their own schedules -- combining
+    them here would mean reading those tabs back in, not just this
+    script's own API pull. Tracked as a deliberate follow-up, not an
+    oversight -- see JROC_Handoff_Guide.md.
 """
 
 import json
 import os
+import sys
 
 import pandas as pd
 import requests
 from datetime import datetime
+
+# repo root (this file's directory) is already on sys.path when run as
+# `python usgs_james_river.py` from the repo root, same as the workflow does --
+# this insert() is just a safety net if it's ever run from elsewhere.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pipeline.risk_index import RiskInputs, score as compute_risk_index, public_risk_level
+from pipeline.join_features import (
+    RAPID_RISE_THRESHOLD_FT,
+    DECEPTIVE_CALM_LOCAL_MAX_FT,
+    DECEPTIVE_CALM_DELTA_MIN_FT,
+)
 
 STATION = "02037500"
 PERIOD = "P30D"  # Last 30 days — change to P7D for 7 days, P365D for a year
@@ -47,6 +73,61 @@ def get_risk_level(gage_height):
     if gage_height >= 4:
         return "Moderate"
     return "Low"
+
+
+def add_risk_index_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Adds the fuller risk_index_1_10 score (pipeline/risk_index.py) alongside
+    the existing simple risk_level, computed from THIS script's own ~15-min
+    series (not day-indexed like join_features.build_environmental_features,
+    since this data is finer-grained than daily).
+
+    For each row, looks up the reading closest to 24h earlier (within a
+    30-minute tolerance) and derives delta_24h, then rapid_rise_flag /
+    deceptive_calm_flag using the same thresholds as join_features.py, so a
+    single source of truth exists for what counts as "rapid" or "deceptive."
+    Rows in the first 24h of the fetched window (no 24h-ago reading available)
+    get both flags forced False rather than a wrong/missing delta.
+    """
+    d = df.copy()
+    d["dt"] = pd.to_datetime(d["datetime"])
+    d = d.sort_values("dt").reset_index(drop=True)
+
+    # shift a copy of the series forward 24h so an asof-nearest match against
+    # the current timestamp effectively finds "the reading from ~24h ago"
+    lookup = d[["dt", "gage_height_ft"]].rename(columns={"gage_height_ft": "gage_24h_ago"})
+    lookup["dt"] = lookup["dt"] + pd.Timedelta(hours=24)
+    matched = pd.merge_asof(
+        d[["dt"]], lookup.sort_values("dt"), on="dt",
+        direction="nearest", tolerance=pd.Timedelta(minutes=30),
+    )
+    d["gage_24h_ago"] = matched["gage_24h_ago"]
+    d["delta_24h"] = (d["gage_height_ft"] - d["gage_24h_ago"]).round(2)
+
+    d["rapid_rise_flag"] = d["delta_24h"] >= RAPID_RISE_THRESHOLD_FT
+    d["deceptive_calm_flag"] = (
+        (d["gage_height_ft"] <= DECEPTIVE_CALM_LOCAL_MAX_FT)
+        & (d["delta_24h"] >= DECEPTIVE_CALM_DELTA_MIN_FT)
+    )
+    no_match = d["gage_24h_ago"].isna()
+    d.loc[no_match, "rapid_rise_flag"] = False
+    d.loc[no_match, "deceptive_calm_flag"] = False
+
+    scores, levels, reasons = [], [], []
+    for _, row in d.iterrows():
+        result = compute_risk_index(RiskInputs(
+            gage_height_ft=row["gage_height_ft"],
+            rapid_rise_flag=bool(row["rapid_rise_flag"]),
+            deceptive_calm_flag=bool(row["deceptive_calm_flag"]),
+        ))
+        scores.append(result["risk_index_1_10"])
+        levels.append(public_risk_level(result["risk_index_1_10"]))
+        reasons.append("; ".join(result["reasons"]))
+
+    d["risk_index_1_10"] = scores
+    d["risk_index_level"] = levels
+    d["risk_index_reasons"] = reasons
+
+    return d.drop(columns=["dt", "gage_24h_ago"])
 
 def fetch_usgs_data():
     print(f"Fetching USGS data for station {STATION}...")
@@ -96,16 +177,19 @@ def fetch_usgs_data():
         })
 
     df = pd.DataFrame(rows)
+    df = add_risk_index_columns(df)
     df.to_csv(OUTPUT_FILE, index=False)
     print(f"CSV written: {OUTPUT_FILE} ({len(rows)} records)")
 
     write_to_google_sheets(df)
 
-    latest = rows[-1]
+    latest = df.iloc[-1]
     print(f"\nLatest reading: {latest['datetime']}")
-    print(f"  Gage height: {latest['gage_height_ft']} ft")
-    print(f"  Discharge:   {latest['discharge_cfs']} cfs")
-    print(f"  Risk level:  {latest['risk_level']}")
+    print(f"  Gage height:     {latest['gage_height_ft']} ft")
+    print(f"  Discharge:       {latest['discharge_cfs']} cfs")
+    print(f"  Risk level:      {latest['risk_level']} (simple, gage-only)")
+    print(f"  Risk index 1-10: {latest['risk_index_1_10']} ({latest['risk_index_level']})")
+    print(f"  Why:             {latest['risk_index_reasons']}")
 
 
 def write_to_google_sheets(df: pd.DataFrame):
