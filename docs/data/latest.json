@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-07-25 12:40:43",
+  "generated_at_utc": "2026-07-26 12:42:47",
   "current": {
-    "datetime": "2026-07-25 07:00",
-    "gage_height_ft": 3.83,
-    "discharge_cfs": 1790.0,
+    "datetime": "2026-07-26 07:00",
+    "gage_height_ft": 3.75,
+    "discharge_cfs": 1630.0,
     "rapid_rise_flag": false,
     "deceptive_calm_flag": false,
-    "precip_24h_in": 0.28,
-    "wind_mph": 6.9,
-    "air_temp_f": 66.2,
+    "precip_24h_in": 0.02,
+    "wind_mph": 0.0,
+    "air_temp_f": 71.6,
     "upstream_rapid_rise_flag": false,
     "risk_index_1_10": 1,
     "risk_index_level": "Low",
@@ -17,12 +17,6 @@
     ]
   },
   "trend": [
-    {
-      "date": "2026-07-12",
-      "gage_height_ft": 3.5,
-      "discharge_cfs": 1160.0,
-      "risk_index_1_10": 1
-    },
     {
       "date": "2026-07-13",
       "gage_height_ft": 3.57,
@@ -97,8 +91,14 @@
     },
     {
       "date": "2026-07-25",
-      "gage_height_ft": 3.83,
-      "discharge_cfs": 1790.0,
+      "gage_height_ft": 3.78,
+      "discharge_cfs": 1690.0,
+      "risk_index_1_10": 1
+    },
+    {
+      "date": "2026-07-26",
+      "gage_height_ft": 3.75,
+      "discharge_cfs": 1630.0,
       "risk_index_1_10": 1
     }
   ]
