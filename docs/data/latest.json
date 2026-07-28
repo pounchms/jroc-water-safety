@@ -1,29 +1,22 @@
 {
-  "generated_at_utc": "2026-07-27 13:56:48",
+  "generated_at_utc": "2026-07-28 13:17:13",
   "current": {
-    "datetime": "2026-07-27 08:00",
-    "gage_height_ft": 3.68,
-    "discharge_cfs": 1490.0,
+    "datetime": "2026-07-28 08:00",
+    "gage_height_ft": 3.69,
+    "discharge_cfs": 1510.0,
     "rapid_rise_flag": false,
     "deceptive_calm_flag": false,
-    "precip_24h_in": 2.54,
-    "wind_mph": 6.9,
+    "precip_24h_in": null,
+    "wind_mph": 8.1,
     "air_temp_f": 75.2,
     "upstream_rapid_rise_flag": false,
-    "risk_index_1_10": 2,
+    "risk_index_1_10": 1,
     "risk_index_level": "Low",
     "risk_index_reasons": [
-      "base level score 1 (gage height 3.7 ft)",
-      "+1 heavy rain in last 24h (2.5 in) -- rise may not show in gage yet"
+      "base level score 1 (gage height 3.7 ft)"
     ]
   },
   "trend": [
-    {
-      "date": "2026-07-14",
-      "gage_height_ft": 3.57,
-      "discharge_cfs": 1280.0,
-      "risk_index_1_10": 1
-    },
     {
       "date": "2026-07-15",
       "gage_height_ft": 3.52,
@@ -98,8 +91,14 @@
     },
     {
       "date": "2026-07-27",
-      "gage_height_ft": 3.68,
-      "discharge_cfs": 1490.0,
+      "gage_height_ft": 3.69,
+      "discharge_cfs": 1510.0,
+      "risk_index_1_10": 1
+    },
+    {
+      "date": "2026-07-28",
+      "gage_height_ft": 3.69,
+      "discharge_cfs": 1510.0,
       "risk_index_1_10": 1
     }
   ]
