@@ -1,5 +1,4 @@
 datetime,date,time,gage_height_ft,discharge_cfs,risk_level,station,station_name,delta_24h,rapid_rise_flag,deceptive_calm_flag,risk_index_1_10,risk_index_level,risk_index_reasons
-2026-08-29 14:15,2026-08-29,14:15,3.35,1140.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-29 14:30,2026-08-29,14:30,3.35,1140.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-29 14:45,2026-08-29,14:45,3.35,1140.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-29 15:00,2026-08-29,15:00,3.35,1140.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
@@ -93,7 +92,7 @@ datetime,date,time,gage_height_ft,discharge_cfs,risk_level,station,station_name,
 2026-08-30 13:00,2026-08-30,13:00,3.38,1190.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-30 13:15,2026-08-30,13:15,3.38,1190.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-30 13:30,2026-08-30,13:30,3.39,1210.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
-2026-08-30 13:45,2026-08-30,13:45,3.39,1210.0,Low,02037500,"James River Near Richmond, VA",0.04,False,False,1,Low,base level score 1 (gage height 3.4 ft)
+2026-08-30 13:45,2026-08-30,13:45,3.39,1210.0,Low,02037500,"James River Near Richmond, VA",,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-30 14:00,2026-08-30,14:00,3.39,1210.0,Low,02037500,"James River Near Richmond, VA",0.04,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-30 14:15,2026-08-30,14:15,3.4,1230.0,Low,02037500,"James River Near Richmond, VA",0.05,False,False,1,Low,base level score 1 (gage height 3.4 ft)
 2026-08-30 14:30,2026-08-30,14:30,3.4,1230.0,Low,02037500,"James River Near Richmond, VA",0.05,False,False,1,Low,base level score 1 (gage height 3.4 ft)
