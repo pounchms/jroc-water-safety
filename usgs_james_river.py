@@ -129,11 +129,31 @@ def add_risk_index_columns(df: pd.DataFrame) -> pd.DataFrame:
 
     return d.drop(columns=["dt", "gage_24h_ago"])
 
+
+def get_with_retry(url: str, attempts: int = 4, timeout: int = 60) -> requests.Response:
+    """USGS waterservices intermittently answers 503 to GitHub runners even while
+    the endpoint is healthy elsewhere (seen 2026-09-26..28). One 503 used to kill
+    the whole run; now we back off and retry before giving up."""
+    import time
+    last_err = None
+    for i in range(attempts):
+        try:
+            r = requests.get(url, timeout=timeout, headers={"User-Agent": "jroc-water-safety (pounchms@vcu.edu)"})
+            if r.status_code in (429, 500, 502, 503, 504):
+                raise requests.HTTPError(f"{r.status_code} from USGS", response=r)
+            r.raise_for_status()
+            return r
+        except (requests.HTTPError, requests.ConnectionError, requests.Timeout) as e:
+            last_err = e
+            wait = 15 * (2 ** i)
+            print(f"  attempt {i+1}/{attempts} failed ({e}); retrying in {wait}s")
+            time.sleep(wait)
+    raise last_err
+
 def fetch_usgs_data():
     print(f"Fetching USGS data for station {STATION}...")
 
-    response = requests.get(API_URL, timeout=30)
-    response.raise_for_status()
+    response = get_with_retry(API_URL)
     data = response.json()
 
     series = data["value"]["timeSeries"]
