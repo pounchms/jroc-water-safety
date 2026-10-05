@@ -16,3 +16,4 @@ credentials*.json
 service_account*.json
 .env
 poc_location_pipeline/jroc_pipeline_diagram.png
+poc_location_pipeline/*_with_river.csv

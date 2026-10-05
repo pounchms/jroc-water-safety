@@ -34,7 +34,7 @@ Results are cached, so a rerun on unchanged notes takes seconds.
 ## Keeping it running after handoff
 
 - **Nothing in this repo runs on a schedule anymore.** From July to October 2026, three daily jobs saved river and weather readings. They were disabled on purpose in October 2026 for three reasons:
-    - **USGS already keeps its full history,** so a daily copy adds nothing. `fetch_river_history.py` pulls flow for any past dates when it's needed. It matched the saved daily copy within 0.6%.
+    - **USGS already keeps its full history,** so a daily copy adds nothing. `fetch_river_history.py` pulls flow for any past dates when it's needed. Its first live run gave all 519 incidents a reading.
     - **A failed run emails the repo owner,** which after handoff would be JROC volunteers.
     - **The jobs call a USGS service** (`waterservices.usgs.gov`) that USGS is replacing, so they would eventually break.
 
