@@ -1,0 +1,6 @@
+location_method,incidents,median_error_m,p90_error_m,max_error_m,share
+llm_site,237,224.1,1254.4400000000003,10963.7,0.457
+unplaced,140,,,,0.27
+llm_what3words,67,0.0,0.0,0.0,0.129
+llm_gps,51,0.4,0.6,0.7,0.098
+llm_off_list,24,,,,0.046

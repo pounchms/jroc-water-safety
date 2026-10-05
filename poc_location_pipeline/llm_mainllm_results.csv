@@ -1,0 +1,520 @@
+map_lat,map_lon,location_method,llm_site_id,llm_other_place,llm_evidence,llm_confidence,llm_model,note_sha
+37.52885,-77.46098,llm_gps,,,"Search initiated on report of paddler overdue, both found cold but ok. No rescue needed, advised re cold water exposure. E16 RTS.",high,ollama:qwen2.5:14b,baba1070fd8f
+37.533637,-77.445376,llm_site,TRED,,"Pt pulled from current by crew, EMS eval, cold but no injuries. Released on scene.",high,ollama:qwen2.5:14b,a5ae97bc3fb2
+37.531882,-77.434462,llm_site,PIPE,,Pipeline for 3 tubers.,high,ollama:qwen2.5:14b,3478a12092d1
+37.559948,-77.575019,llm_site,BOSH,,"Pt located on shore, no PFD, cold but uninjured.",high,ollama:qwen2.5:14b,de7b7f8b761d
+,,unplaced,,,record_location tool called for further details on the exact location of the incident.,low,ollama:qwen2.5:14b,d371af40148e
+37.52796,-77.43549,llm_gps,,,pt located and removed from harm by crew.,high,ollama:qwen2.5:14b,7898bbff07f7
+,,unplaced,,,"Note mentions patient was swept off in fast rising water and was searched for downstream, but does not specify a known river site.",low,ollama:qwen2.5:14b,a91eab7cbf2f
+37.528301,-77.475311,llm_site,42ND,,"Located at 42nd St access, both fine.",high,ollama:qwen2.5:14b,87063d06b3f0
+37.532563,-77.441084,llm_site,BROWN,,"Engine 12 standby at Browns Island 1600. 2 tubers asking about put-in and river levels, info provided. No injuries. RTS.",high,ollama:qwen2.5:14b,3f98e873a75f
+37.520293,-77.417614,llm_site,ANC,,pt found and removed from harm at Ancarrows,high,ollama:qwen2.5:14b,30c016950fa9
+37.531882,-77.434462,llm_site,PIPE,,"Crew removed all 3 from harm. 1 w/ injury, EMS care provided on scene.",high,ollama:qwen2.5:14b,a0dcbf6a8da1
+37.528299,-77.437578,llm_what3words,PONY,,"Caller updated pt position to ///timber.otter.velvet, kayaker reached shore on own.",high,ollama:qwen2.5:14b,d833aece8b37
+37.558554,-77.526598,llm_site,ZDAM,,pt found approx 200 yds below Z Dam,high,ollama:qwen2.5:14b,c7ca54e4dc47
+37.530741,-77.455404,llm_site,BELLE,,"E12 1400 2 kayakers reported missing near Belle Isle. Search conducted, both located, inexperienced paddlers who lost track of time. No rescue needed. RTS.",high,ollama:qwen2.5:14b,f2054c6f03ec
+37.52773,-77.47094,llm_gps,,,"Note: E05 1300 PWC operator reported down near N37.52773 W77.47094, no PFD. Caller advised operator back underway. Canceled en route.",high,ollama:qwen2.5:14b,6f811bae62d8
+37.528128,-77.436677,llm_what3words,,,"Note: Boat 1 dispatched 2000, 3 people reported at ///island.tundra.falcon. Canceled en route per dispatch.",high,ollama:qwen2.5:14b,01a87992f1fe
+37.52716,-77.469861,llm_site,REEDY,,Note mentions 'reedy ck' as the location where the swimmer was wading.,high,ollama:qwen2.5:14b,f20d4da9b4b7
+37.527633,-77.46879,llm_what3words,,summit.quill.glacier,Pt found at ///summit.quill.glacier,high,ollama:qwen2.5:14b,ef323ba0e776
+,,unplaced,,,"Note: Boat 1 dispatched 1400 for PWC operator reported in distress mid-channel, no PFD per caller. Canceled en route by ECC, operator back underway. Boat 1 RTS.",low,ollama:qwen2.5:14b,a94bd811dfe0
+,,unplaced,,,"Note mentions dispatch to Pony Pasture but is cancelled en route, no incident occurs.",low,ollama:qwen2.5:14b,c80a391b856b
+,,unplaced,,,Note does not specify a known river site for the patient's location.,low,ollama:qwen2.5:14b,5f8601a751f3
+37.55646,-77.55981,llm_gps,,,"Boat 1 1400 check on bank fisherman at 37.55646, -77.55981. Investigated, no one in distress. No incident found.",low,ollama:qwen2.5:14b,52354b685898
+,,unplaced,,,no pt located. No incident found. RTS.,low,ollama:qwen2.5:14b,de9f91a819ab
+37.552224,-77.517472,llm_site,PONY,,"Raft pinned at Pony Pasture, 1 pt inexperienced, high water rising. Pt removed from harm by crew, no injury.",high,ollama:qwen2.5:14b,6a3e66f27613
+,,unplaced,,,"record_location tool called for further details on the exact location of the incident involving the kayakers on the James River, Richmond, VA.",low,ollama:qwen2.5:14b,0079ed81e379
+37.520293,-77.417614,llm_site,ANC,,"Note: E01 1800 tubers, ETOH suspected, river up and fast. 1 pt recovered approx 150 yds downstream of Ancarrows boat ramp after search. EMS on scene. Fatality. 2nd party accounted for.",high,ollama:qwen2.5:14b,16c1f02a028f
+37.559948,-77.575019,llm_site,BOSH,,"Pt located, no rescue needed.",high,ollama:qwen2.5:14b,6a903224322d
+37.533637,-77.445376,llm_site,TRED,,"pts were on Canal Walk near Tredegar. Standby, pts out of water on arrival.",high,ollama:qwen2.5:14b,260d549e155d
+37.530741,-77.455404,llm_site,BELLE,,"Crew made water rescue w/ throw bag and shore team, pt brought to river left bank. Pt c/o shoulder injury, EMS care provided, transported by Medic.",high,ollama:qwen2.5:14b,300aeca626ed
+,,llm_off_list,,tunddra paddle lilac,"Note: Boat 1 1700 hrs kayaker reported stuck at ///tunddra.paddle.lilac. River rising, submerged rocks. Searched, pt located ok, no rescue needed.",high,ollama:qwen2.5:14b,ad7340b524ac
+,,unplaced,,,record_location(),low,ollama:qwen2.5:14b,3ee02dbf960f
+,,unplaced,,,record_location tool called for further details.,low,ollama:qwen2.5:14b,a358a6c2a587
+37.528011,-77.438401,llm_what3words,,,"E05 1200 assist 4 tubers at ///glacier.summit.fable. Investigated, all fine, no injuries.",low,ollama:qwen2.5:14b,42d65fd9de66
+,,unplaced,,,Note mentions a kayaker but does not specify a location where the patient was found or rescued. The patient was advised to get off the water but no specific location is given for the patient's location at the time of the incident.,low,ollama:qwen2.5:14b,2cd8bdd9689a
+37.528074,-77.43403,llm_site,MAYO,,Pt found under Mayo Br on the 14th St side.,high,ollama:qwen2.5:14b,60c28649a315
+37.528281,-77.471851,llm_what3words,,summit cobalt harbor,"Pt found at ///summit.cobalt.harbor instead, no PFD, inexperienced.",high,ollama:qwen2.5:14b,347fb77512b7
+,,llm_off_list,,gravel bar,"Pt located on right bank, walked out on own after stepping off ledge into deep water.",high,ollama:qwen2.5:14b,a9230b2e6f02
+,,llm_off_list,,falcon glacier river,"E05 1800 2 tubers reported at ///falcon.glacier.rver. Investigated, nothing found. No incident. RTS.",low,ollama:qwen2.5:14b,ebc24fc240b4
+,,unplaced,,,record_location tool called for verification of location details.,low,ollama:qwen2.5:14b,2c794215440b
+37.52752,-77.467137,llm_what3words,,///harbor.copper.hazel,Note: Boat 1 1000 SUP reported at ///harbor.copper.hazel. Canceled en route.,low,ollama:qwen2.5:14b,0fea714a9032
+37.52994,-77.45714,llm_gps,,,"E16 1400 standby for kayaker at 37.52994, -77.45714. River info provided. No injuries. RTS.",high,ollama:qwen2.5:14b,7ae532c3878b
+37.531882,-77.434462,llm_site,PIPE,,Pipeline walkway,high,ollama:qwen2.5:14b,02ed8c401369
+37.532563,-77.441084,llm_site,BROWN,,"Boat 1 1300 dispatched to Belle Isle, 4 tubers in trouble, found instead at Brown's Is, no PFDs, ETOH suspected, water rising. All removed from harm. EMS eval, no injuries.",high,ollama:qwen2.5:14b,a93ba770a65e
+37.530741,-77.455404,llm_site,BELLE,,"Note: E05 1400, 2 tubers stuck approx 100 yds upstream of Belle Isle. River rising, local gauge low but upstream up. Both removed from harm, EMS care, no injuries.",high,ollama:qwen2.5:14b,61583e09b491
+37.559948,-77.575019,llm_site,BOSH,,Boat 1 1700 med eval 2 pts at Boshers Dam.,high,ollama:qwen2.5:14b,cae37705df1c
+37.530741,-77.455404,llm_site,BELLE,,E01 1800 belle isl unk activity call canc enrte no inc RTS,high,ollama:qwen2.5:14b,58a6c4433a38
+37.559948,-77.575019,llm_site,BOSH,,Bosher Dam,high,ollama:qwen2.5:14b,5fb65b292673
+37.531882,-77.434462,llm_site,PIPE,,E05 1700 PWC reported at Pipeline.,high,ollama:qwen2.5:14b,823b7b25f72a
+37.55178,-77.51843,llm_gps,,,"GPS coordinates provided in the note: 37.55178, -77.51843",high,ollama:qwen2.5:14b,a50f358ec93d
+37.528301,-77.475311,llm_site,42ND,,"E05 1000 SUP paddler at 42nd St, no PFD, inexperienced. Med eval, no injury.",high,ollama:qwen2.5:14b,f48519314dc8
+37.533637,-77.445376,llm_site,TRED,,crew located them on Tredegar side of Canal Walk.,high,ollama:qwen2.5:14b,b2c33a5a97a2
+37.528074,-77.43403,llm_site,MAYO,,mayo br,high,ollama:qwen2.5:14b,afcebc50bbdb
+37.530741,-77.455404,llm_site,BELLE,,E16 1200 2 on PWC no PFDs at Belle Isle.,high,ollama:qwen2.5:14b,ea19a50e02dc
+,,unplaced,,,"Note: E01 0900 2 swimmers med eval, minor injuries. EMS care provided, investigated.",low,ollama:qwen2.5:14b,097bd35341fe
+37.56178,-77.5419,llm_gps,,,Canceled en route. No usable patient location provided.,low,ollama:qwen2.5:14b,0dfe69ef5edc
+,,llm_off_list,,///stone.fbale.summit,"Note: E16 1600 kayaker, no PFD, inexperienced, reported at ///stone.fbale.summit. Search conducted, pt located ok. No rescue needed.",high,ollama:qwen2.5:14b,a38fa21e25b6
+37.520293,-77.417614,llm_site,ANC,,"E01 1700 2 tubers at Ancarrow Landing, no PFDs. Med eval, minor injury. Investigated.",high,ollama:qwen2.5:14b,d94d55239256
+,,unplaced,,,Note does not specify a known river site for the location of the swimmers.,low,ollama:qwen2.5:14b,ad006951bcbd
+37.531882,-77.434462,llm_site,PIPE,,crew found pt at the Pipeline catwalk.,high,ollama:qwen2.5:14b,55f5032f5b06
+37.532563,-77.441084,llm_site,BROWN,,"E01 0900 kayaker at Browns Island, no PFD, river rising high. Crew removed pt from harm, EMS care. Injury, transported.",high,ollama:qwen2.5:14b,c1a19e1f7d52
+,,unplaced,,,record_location tool called for further details as the exact location is not specified in the note.,low,ollama:qwen2.5:14b,8b585fee54aa
+37.56134,-77.54529,llm_gps,,,"E16 0900 check on 2 canoeists reported at N37.56134 W77.54529. Investigated, no one found in distress. No incident.",low,ollama:qwen2.5:14b,8c1a00c45d92
+37.536022,-77.492077,llm_what3words,,,"Canoeist reported overdue at ///basin.hazel.juniper, gage local low but upstream rising, rocks exposed. E05 investigated 1900, no incident found. Pt home addr 3405 Hanover Ave, confirmed home safe.",low,ollama:qwen2.5:14b,8147aaf96e43
+37.55866,-77.57027,llm_gps,,N37.55866 W77.57027,GPS coordinates provided: N37.55866 W77.57027,high,ollama:qwen2.5:14b,9952f809522e
+,,unplaced,,,record_location tool called for further details.,low,ollama:qwen2.5:14b,2df0cd013fba
+,,unplaced,,,record_location tool called for further details.,low,ollama:qwen2.5:14b,fe91ec467049
+37.552224,-77.517472,llm_site,PONY,,"E05 1900 dispatched Ancarrows for tubers, nobody there. 2 tubers located at Pony Pasture on the rocks. Standby, river info given. No injury, RTS.",high,ollama:qwen2.5:14b,8294cba132d8
+37.528074,-77.43403,llm_site,MAYO,,"Note: E01 1600, 3 tubers hung up approx 100 yds above Mayo Bridge. Assisted to shore, investigated. All ok.",high,ollama:qwen2.5:14b,52bea4911a79
+37.531882,-77.434462,llm_site,PIPE,,"Note: E16 1200 assist 1 pt at the Pipeline, unk activity. Investigated, no injury. Pt walked out on own.",high,ollama:qwen2.5:14b,717f8659aea7
+37.559948,-77.575019,llm_site,BOSH,,"E12 2100 hrs kayaker, inexperienced, unable to get off water near Boshers dam after dark. Assisted pt to bank, investigated. No injury.",high,ollama:qwen2.5:14b,020a4badda22
+37.561655,-77.542582,llm_site,HUG,,Huguenot flatwater,high,ollama:qwen2.5:14b,561ffb7372fd
+,,unplaced,,,"Note: Boat 1 0900, 2 kayakers without PFDs reported. Canceled en route.",low,ollama:qwen2.5:14b,4991a073bde2
+,,unplaced,,,Canceled en route by dispatch. No usable patient location provided in the note.,low,ollama:qwen2.5:14b,ed27c7ed7d80
+37.559948,-77.575019,llm_site,BOSH,,Boater reported at Bosher Dam,high,ollama:qwen2.5:14b,40f5b99135c2
+37.53046,-77.44194,llm_gps,,,"Note: E16 1800 swimmer reported at 37.53046,-77.44194 in cold water near rocks. Canceled en route, pt out on own.",high,ollama:qwen2.5:14b,6b3eb33e45d7
+37.558554,-77.526598,llm_site,ZDAM,,"pt in water no PFD, high cold current rising quickly at Z-Dam",high,ollama:qwen2.5:14b,b4dd1cdf1301
+,,unplaced,,,"Note: Boat 1 1700 swimmer, no PFD, in cold water. Searched, located pt and removed from harm. Injured, EMS.",low,ollama:qwen2.5:14b,9c3b0d430fde
+37.520692,-77.418354,llm_what3words,,clover crest ember,"Note: Boat 1 1600 swimmer at ///clover.crest.ember, no PFD. River rising though local gage low, upstream coming up. Assisted pt, investigated. No injury.",high,ollama:qwen2.5:14b,506538522336
+37.532563,-77.441084,llm_site,BROWN,,"E16 1300 two tubers at Browns Isl requested help. Assisted, investigated. No injuries.",high,ollama:qwen2.5:14b,7098f0c5a0fc
+37.530741,-77.455404,llm_site,BELLE,,"E12 1200 2 kayakers at Belle Isle, no PFDs, cold water. Canceled en route.",high,ollama:qwen2.5:14b,7413645e4b9c
+37.559648,-77.527339,llm_what3words,,paddle canyon beacon,B1 1200 swmr ///paddle.canyon.beacon med eval EMS minor inj invest pt ok,high,ollama:qwen2.5:14b,28187f0daf3c
+37.530741,-77.455404,llm_site,BELLE,,E05 1400 kayaker reported at BI near rocks in cold water.,high,ollama:qwen2.5:14b,7cc5b73efe50
+37.530082,-77.455359,llm_what3words,,marble island,"E16 1100 bank fisherman at ///marble.island.garnet slipped on rocks. EMS care, minor injury. Investigated.",high,ollama:qwen2.5:14b,650b22aa20a0
+,,unplaced,,,"Note: E01 1400 standby for 2 kayakers, no PFDs, cold water. Cancelled, no incident.",low,ollama:qwen2.5:14b,785bb7f0073e
+37.531882,-77.434462,llm_site,PIPE,,pipeline 3 tubers cold wtr canc enrte RTS,high,ollama:qwen2.5:14b,db6d2fb92355
+37.530741,-77.455404,llm_site,BELLE,,"E01 1200 check approx 200 yds below Belle Isle, pt reported in cold water, unk activity. Investigated, no incident found.",low,ollama:qwen2.5:14b,482520c254cf
+,,unplaced,,,"Note: E12 1600 bank fisherman minor injury. EMS care, investigated.",low,ollama:qwen2.5:14b,800eaec6d0c6
+37.529479,-77.457602,llm_what3words,,///anchor.ripple.velvet,"Note: E05 1400 swimmer at ///anchor.ripple.velvet, no PFD, cold water, local gage low but river rising from upstream. Removed from harm, EMS eval, no injury.",high,ollama:qwen2.5:14b,8250a1785d06
+37.559948,-77.575019,llm_site,BOSH,,rafter at Bosher Dam,high,ollama:qwen2.5:14b,7d5ba3badcd2
+37.531882,-77.434462,llm_site,PIPE,,"Pipeline Rapids kayaker, ETOH suspected, cold. Referred to police.",high,ollama:qwen2.5:14b,4554b3d750a0
+37.528301,-77.475311,llm_site,42ND,,42nd st,high,ollama:qwen2.5:14b,be3767edc256
+37.5519,-77.51893,llm_gps,,,swmr rvr rising cold wtr stby canc no inc,low,ollama:qwen2.5:14b,d02e42b1c64e
+,,unplaced,,,record_location tool called for further details on the exact location of the right bank where the paddleboarders came ashore.,low,ollama:qwen2.5:14b,6d39cff1ca4a
+37.531882,-77.434462,llm_site,PIPE,,"E01 2100 kayaker at the Pipeline, ETOH suspected. Referred to police.",high,ollama:qwen2.5:14b,43cf4e626b22
+37.528074,-77.43403,llm_site,MAYO,,Note mentions Mayo Bridge as the location.,high,ollama:qwen2.5:14b,6b6ac5d3cfda
+37.552224,-77.517472,llm_site,PONY,,"Boat 1 1700 swimmer reported down at Pony Pasture, high fast water rising. Search conducted, body recovered. EMS on scene. Fatality.",high,ollama:qwen2.5:14b,7d6e43a03dfc
+,,unplaced,,,"Note: E01 0900 search for inexperienced rafter. Pt located, no rescue needed.",low,ollama:qwen2.5:14b,399f12c6779d
+37.532695,-77.448475,llm_what3words,REEDY,,"E12 1900 caller said Reedy Creek, 2 bank fishermen no PFDs found at ///fable.amber.stone. No injuries. Referred to proper authority.",high,ollama:qwen2.5:14b,f7dfa6c84d4a
+,,unplaced,,,record_location tool called for further details as the note does not specify the exact location of the swimmers on the James River.,low,ollama:qwen2.5:14b,d5cfc86afdca
+,,unplaced,,,"The note states that the search was conducted but nothing was found, indicating no specific location for the patient.",low,ollama:qwen2.5:14b,fc74abb2cfe0
+37.528301,-77.475311,llm_site,42ND,,pt was at 42nd St,high,ollama:qwen2.5:14b,cd99745edaa2
+,,llm_off_list,,rocks on right bank,"Boat 1 1900, 2 fishing from rocks on right bank, 1 slipped into water between submerged rocks. No PFDs. Assisted pt back up onto rocks, investigated. No inj.",high,ollama:qwen2.5:14b,a1ba1e459eb5
+37.53207,-77.44817,llm_gps,,,rvr rising med eval EMS minor inj invest,high,ollama:qwen2.5:14b,8f5dbd6ed66e
+37.528192,-77.476085,llm_what3words,,lantern fable glacier,"E01 0800 2 tubers, no PFDs, at ///lantern.fable.glacier. Canceled en route.",high,ollama:qwen2.5:14b,dcf8346a511c
+37.552224,-77.517472,llm_site,PONY,,On arrival found at Pony Pasture.,high,ollama:qwen2.5:14b,52014f5e44c0
+37.52792,-77.47154,llm_gps,,,"EMS, minor injury. Home addr 3212 Kensington Ave. Investigated.",low,ollama:qwen2.5:14b,ad9d8321e8e1
+37.528301,-77.475311,llm_site,42ND,,"E16 0900 assist pt approx 150 yds across from 42nd Street access, inexperienced. Investigated, no injury.",high,ollama:qwen2.5:14b,501969e387c4
+37.520293,-77.417614,llm_site,ANC,,"Note mentions Ancarrow's Landing as the initial location of the call, but no patient was found there or at Belle Isle.",high,ollama:qwen2.5:14b,3f4659b384a7
+37.520564,-77.418167,llm_what3words,,///quill.cedar.meadow,"Note: Boat 1 1300 standby at ///quill.cedar.meadow, pt no PFD. River info provided.",high,ollama:qwen2.5:14b,64ba2a5f7909
+,,unplaced,,,Note: E16 1200 2 kayakers no PFDs. Canceled en route.,low,ollama:qwen2.5:14b,12d426cade14
+,,unplaced,,,"Note: Boat 1 1900 tuber reported, no PFD, inexperienced, river rising, submerged rocks. Investigated, no incident found.",low,ollama:qwen2.5:14b,97acf373f30a
+37.552224,-77.517472,llm_site,PONY,,E16 1200 kayaker med eval at Pony Pasture.,high,ollama:qwen2.5:14b,4c74c4045248
+37.551578,-77.517169,llm_what3words,,river heron bank,"Boat 1 1300 tuber at ///river.heron.bank, ETOH suspected, river rising. Standby, info provided. Pt home addr 4012 Brook Rd.",high,ollama:qwen2.5:14b,1cad232a5dbd
+,,unplaced,,,"Note: E16 1900 kayaker reported at Mayo Bridge. Investigated, no incident found.",low,ollama:qwen2.5:14b,de4bda0bdf19
+,,unplaced,,,Note: E16 1300 3 kayakers no PFDs. Canceled en route.,low,ollama:qwen2.5:14b,c9b0d3bf07dd
+,,unplaced,,,"Note: E12 1400 2 rafters, ETOH suspected. Med eval, minor injury. Investigated.",low,ollama:qwen2.5:14b,cae420dd6a0e
+37.530741,-77.455404,llm_site,BELLE,,"Pt located, no rescue needed at Belle Isle.",high,ollama:qwen2.5:14b,582e563ae36a
+37.53129,-77.48236,llm_gps,,,"Removed from harm, EMS eval, no injury.",high,ollama:qwen2.5:14b,7e92968e6dca
+,,llm_off_list,,basin islands ripple,"E12 1400 3 inexperienced tubers at ///basin.islands.ripple. Standby, cancelled.",low,ollama:qwen2.5:14b,8da57780fe47
+37.531882,-77.434462,llm_site,PIPE,,swimmer at Pipeline.,high,ollama:qwen2.5:14b,b6252f0c4009
+,,unplaced,,,record_location tool called for further details on the exact location of the submerged rock and the location where the crew reached the patients.,low,ollama:qwen2.5:14b,8ded27d36656
+37.529507,-77.45782,llm_what3words,,copper velvet meadow,record_location tool,high,ollama:qwen2.5:14b,43aefae2126e
+37.530741,-77.455404,llm_site,BELLE,,"Located clinging to rock mid-channel, removed from harm by rope team to left bank. No injuries.",high,ollama:qwen2.5:14b,5095fedbd86e
+37.552113,-77.518798,llm_what3words,,cobalt stone meadow,"E12 0800 kayak overturned in high fast water, 2 pts, no PFDs. Search ops, 1 recovered at ///cobalt.stone.meadow. EMS on scene, fatality. River rose rapidly overnight.",high,ollama:qwen2.5:14b,d9ddecdd8a24
+37.530741,-77.455404,llm_site,BELLE,,bell isle,high,ollama:qwen2.5:14b,c37a4a14b933
+37.528301,-77.475311,llm_site,42ND,,"Note: Boat 1 1100 2 kayakers flipped off 42nd St, no PFDs, river up and rising. Water rescue, EMS eval, no injuries. Pt home addr 2507 Barton Ave.",high,ollama:qwen2.5:14b,95bd9049ea3c
+37.559948,-77.575019,llm_site,BOSH,,pt found on bank,high,ollama:qwen2.5:14b,76b360318322
+,,unplaced,,,"Note: Pt w/o PFD, inexperienced, asking about getting in. E16 standby 1800, info provided. No injury.",low,ollama:qwen2.5:14b,3a49c6b32dfe
+,,unplaced,,,"Note: 2 swimmers in trouble, Boat 1 on scene 1400. Both removed from harm, EMS eval, no injury.",low,ollama:qwen2.5:14b,06046bbaaf06
+,,unplaced,,,"No pts located, caller gone on arrival. No incident found.",low,ollama:qwen2.5:14b,0dfad7d826df
+,,unplaced,,,"Note: E01 0800 standby for 4 tubers at Z Dam. Cancelled, no incident.",low,ollama:qwen2.5:14b,a4ad5eb10ad5
+37.559948,-77.575019,llm_site,BOSH,,"Search, all located approx 250 yds below Bosher Dam on the bank.",high,ollama:qwen2.5:14b,9d28769d5bb1
+,,unplaced,,,"Note: E05 1400 canoe w/ 2, no PFDs, river rising. Standby, info given. Pts got off water.",low,ollama:qwen2.5:14b,d2dcc999a121
+,,unplaced,,,"Note: E12 1500 2 tubers reported in trouble. Investigated, no incident found.",low,ollama:qwen2.5:14b,fdb6210c9d39
+37.531882,-77.434462,llm_site,PIPE,,swimmer was stuck at Pipeline Rapids,high,ollama:qwen2.5:14b,95c0e5017012
+37.527822,-77.470696,llm_what3words,,willow mosaic canoe,"Note: E12 2000 PWC capsized, 3 in water at ///willow.mosaic.canoe. Water rescue, EMS care. 1 injured, transported.",high,ollama:qwen2.5:14b,4f9e59e1073a
+37.552224,-77.517472,llm_site,PONY,,Boat 1 1700 standby for 2 kayakers without PFDs approx 100 yds upstream of Pony Pasture.,high,ollama:qwen2.5:14b,3fc5789ff734
+,,unplaced,,,"Note: 1000 E01 resp for 2 tubers reported stuck in river. Canceled en route, tubers made bank on own. RTS.",low,ollama:qwen2.5:14b,ff15f9725f3d
+,,unplaced,,,"Note: E01 1900 investigated call for swimmer, no PFD, reportedly caught near submerged rocks river right. Checked bank and eddy, no one found. No incident.",low,ollama:qwen2.5:14b,03d37d89f364
+37.528301,-77.475311,llm_site,42ND,,E12 1300 med eval 2 tubers at 42nd Street.,high,ollama:qwen2.5:14b,a45304a462d0
+37.52146,-77.418945,llm_what3words,42ND,,Pts found at ///beacon.marble.anchor.,high,ollama:qwen2.5:14b,4d17be4e6311
+37.559019,-77.526235,llm_what3words,,,E05 0900 2 kykrs inexp search ///quill.ripple.amber pts loc ok no rescue RTS,low,ollama:qwen2.5:14b,d15fb2c1ce8c
+37.533637,-77.445376,llm_site,TRED,,Canal Walk at Tredegar,high,ollama:qwen2.5:14b,4b7c02dcc859
+,,unplaced,,,"Note: E01 2100, 2 swimmers reported. Standby, cancelled. No incident.",low,ollama:qwen2.5:14b,51688b6e7578
+37.528301,-77.475311,llm_site,42ND,,E12 2200 42nd st swmr invest NIF RTS,high,ollama:qwen2.5:14b,886cbaf64995
+37.52716,-77.469861,llm_site,REEDY,,"E05 1000 PWC reported approx 200 yds upstream of Reedy Creek. Investigated, no incident found.",low,ollama:qwen2.5:14b,5a88ad5e2e56
+37.559527,-77.575187,llm_what3words,,///ledger.marble.heron,"Investigated, no incident found.",low,ollama:qwen2.5:14b,334ef66938be
+,,llm_off_list,,gravel bar downstream,"E12 searched 1100 for 1 of 2 waders reported missing off left bank, ETOH suspected. Missing party found on gravel bar downstream, no rescue needed. Both uninjured.",low,ollama:qwen2.5:14b,f21d495eb4a4
+37.552224,-77.517472,llm_site,PONY,,"Boat 1 0700 swimmer caught at Pony Pasture, water rising fast from upstream while local gage low. Inexperienced. Removed from harm, EMS, pt injured.",high,ollama:qwen2.5:14b,3189a8e3095b
+37.558554,-77.526598,llm_site,ZDAM,,swimmer in trouble approx 100 yds across from Z-Dam,high,ollama:qwen2.5:14b,105afdf30d61
+,,unplaced,,,"Note: E05 1700 standby 3 kayakers, info provided.",low,ollama:qwen2.5:14b,826afbbecfd7
+,,unplaced,,,E01 1300 N37.52797 W77.43339,high,ollama:qwen2.5:14b,70cc844d1391
+37.558554,-77.526598,llm_site,ZDAM,,"Boat 1 0900 PWC operator at Z Dam, removed from harm, EMS eval. No injury.",high,ollama:qwen2.5:14b,4562ca14a867
+37.559948,-77.574509,llm_what3words,,glacier otter marble,E16 1600 bank fisherman at ///glacier.otter.marble.,high,ollama:qwen2.5:14b,6373f4eb83de
+37.559948,-77.575019,llm_site,BOSH,,Boshers Dam in high rising water,high,ollama:qwen2.5:14b,7fb7a5abf8e8
+37.528301,-77.475311,llm_site,42ND,,"Note: Boat 1 0700 2 kayakers at 42nd St. Removed from harm, EMS care. 1 injury.",high,ollama:qwen2.5:14b,218905b7606a
+37.559948,-77.575019,llm_site,BOSH,,"E05 1800 2 swimmers at Bosher Dam, med eval. No injuries. Investigated.",high,ollama:qwen2.5:14b,6c97a6ec593c
+37.520349,-77.418027,llm_what3words,,saddle hazel anchor,"Note: E12 1800 2 tubers, no PFDs, river rising, at ///saddle.hazel.anchor. Assisted to bank, investigated. No injury.",high,ollama:qwen2.5:14b,212c8bfb7ca9
+37.52716,-77.469861,llm_site,REEDY,,reedy ck 3 kykrs,high,ollama:qwen2.5:14b,ffe4899138c6
+,,unplaced,,,Note: E12 1600 BI kykr inexp canc enrte does not specify a location on the James River or provide enough information to determine the patient's location.,low,ollama:qwen2.5:14b,b61448b7428a
+37.52716,-77.469861,llm_site,REEDY,,stopped approx 200 yds below Reedy Creek,high,ollama:qwen2.5:14b,eb26b112ec1b
+37.55958,-77.57267,llm_gps,,,GPS coordinates provided but no actual incident found.,low,ollama:qwen2.5:14b,77f416a7a548
+37.530741,-77.455404,llm_site,BELLE,,approx 150 yds downstream of Belle Isle,high,ollama:qwen2.5:14b,086d7bd08088
+,,unplaced,,,"Note: E01 1300 assist 2 swimmers, investigated. No injuries.",low,ollama:qwen2.5:14b,6bf30e54a639
+,,unplaced,,,Note does not specify a known river site for the patient's location.,low,ollama:qwen2.5:14b,d8da3d4c6f7c
+37.531882,-77.434462,llm_site,PIPE,,E01 0900 3 tubers at Pipeline.,high,ollama:qwen2.5:14b,f1d0a9ef8641
+37.528074,-77.43403,llm_site,MAYO,,Mayo Bridge,high,ollama:qwen2.5:14b,c645d6982cb9
+37.52787,-77.47036,llm_gps,,,"E01 2000 2 canoeists reported at 37.52787, -77.47036, cold water. Investigated, no incident found.",low,ollama:qwen2.5:14b,56bf8a8e48f6
+37.528074,-77.43403,llm_site,MAYO,,Mayo Bridge,high,ollama:qwen2.5:14b,d11097804c9c
+37.528074,-77.43403,llm_site,MAYO,,"E16 2000 PWC operator at 14th St bridge (Mayo). Removed from harm, EMS eval. No injury.",high,ollama:qwen2.5:14b,d4e0d4a1c2ea
+,,unplaced,,,record_location tool called for further details on location of the incident involving the fishermen.,low,ollama:qwen2.5:14b,f4e936c01041
+37.530394,-77.454733,llm_what3words,,quiet meadow beacon,///quiet.meadow.beacon 2 in canoe no PFDs cold wtr canc enrte,high,ollama:qwen2.5:14b,92e1e0f1af55
+37.534564,-77.491407,llm_what3words,,velvet harbor kettle,"Note: E12 1700 tuber at ///velvet.harbor.kettle, cold water. Med eval, minor injury. Investigated.",high,ollama:qwen2.5:14b,c0c356987234
+,,unplaced,,,Note does not specify a known river site where the patient was located.,low,ollama:qwen2.5:14b,6b7cc23ecfaa
+,,llm_off_list,,river left bank,"1500 E01, 2 kayakers capsized after hitting submerged rock mid-channel, cold water. Both out on river left bank. EMS eval, 1 minor laceration treated on scene. Investigated.",low,ollama:qwen2.5:14b,8085ff586a4c
+37.552224,-77.517472,llm_site,PONY,,E16 resp kayaker poss in trouble pony pasture 1 pt river coming up fast upstream gauge rising local still low cold water canc en route per caller pt off water ok E16 RTS,high,ollama:qwen2.5:14b,909397892d10
+,,unplaced,,,Note mentions staging at 42nd St but no patient location is given where contact was needed. Incident cancelled without specifying where overdue canoeists were found or rescued.,low,ollama:qwen2.5:14b,c87f2d0f050a
+37.552224,-77.517472,llm_site,PONY,,"1 pt swimming/wading at Pony Pasture, bystander called for assist. E01 on scene, pt helped back to bank, investigated, no injuries. Pt declined EMS. E01 RTS.",high,ollama:qwen2.5:14b,a5e18a288eed
+37.530741,-77.455404,llm_site,BELLE,,"Belle Isle, 2 tubers reported missing by group. E05 searched shoreline, both pts located on rocks unharmed, no rescue needed. EtOH suspected. Advised, RTS.",high,ollama:qwen2.5:14b,26caa4edacc0
+37.529687,-77.454664,llm_what3words,,rope juniper fable,,high,ollama:qwen2.5:14b,b38cd024ef66
+,,llm_off_list,,gravel bar right side,"Pt found on gravel bar right side, walked out. No rescue needed.",low,ollama:qwen2.5:14b,b0d0a8acfce9
+37.5277,-77.43711,llm_gps,,,record_location(),low,ollama:qwen2.5:14b,972f4ab6c78a
+,,unplaced,,,record_location tool called for further details as the specific location is not mentioned in the note.,low,ollama:qwen2.5:14b,b8504b52cb1a
+37.528301,-77.475311,llm_site,42ND,,"Note mentions the incident is approximately 200 yards upstream of 42nd St, which is the known site for 42ND.",high,ollama:qwen2.5:14b,39ac2e0525cc
+37.559948,-77.575019,llm_site,BOSH,,"All 3 pts water rescued at the dam, EMS care, no injuries. River rising fast, high current.",high,ollama:qwen2.5:14b,4c895c812f6a
+37.531882,-77.434462,llm_site,PIPE,,"Pipeline for 2 people, assisted off rocks at Pipeline Rapids",high,ollama:qwen2.5:14b,30dc90320325
+,,unplaced,,,record_location tool called for further details on the exact location of the eddy where the tubers were stuck.,low,ollama:qwen2.5:14b,26b52c7358e3
+37.532563,-77.441084,llm_site,BROWN,,3 tubers approx 150 yds below Browns Island,high,ollama:qwen2.5:14b,233470687169
+37.52716,-77.469861,llm_site,REEDY,,"Pts found ok on bank, no incident.",high,ollama:qwen2.5:14b,06e567cbca57
+37.532563,-77.441084,llm_site,BROWN,,Motorboat operator at BI,high,ollama:qwen2.5:14b,9ed5b110596d
+37.531882,-77.434462,llm_site,PIPE,,"Note states the canoeist was approx 100 yds upstream of Pipeline Rapids, which is the known site PIPE.",high,ollama:qwen2.5:14b,05ad3b1129f7
+37.561655,-77.542582,llm_site,HUG,,"1 canoeist at Huguenot flatwater, minor injury, EtOH suspected. E16 EMS eval, investigated. Pt released to friend.",high,ollama:qwen2.5:14b,bf4fb89ef264
+37.530741,-77.455404,llm_site,BELLE,,E05 inv tuber report belle isle 1 pt nothing found no incident canc RTS,high,ollama:qwen2.5:14b,fd58cb7da4ba
+,,unplaced,,,"Note: E01 assisted 2 people who got stuck when water came up, submerged rocks in area. Investigated, no injuries, both self-extricated w/ assist. RTS.",low,ollama:qwen2.5:14b,2c2e38a7225c
+37.552224,-77.517472,llm_site,PONY,,"E01 on scene Pony Pasture 0600, raft w/ 3 aboard pinned in high current, river rising fast. All pts removed from harm, 1 pt injured, EMS care. EtOH suspected. Pt home address 1600 blk Chamberlayne Ave.",high,ollama:qwen2.5:14b,aa5bd0bb83a5
+,,unplaced,,,record_location tool called for further details on the exact location of the right bank where the tubers were found.,low,ollama:qwen2.5:14b,1899c3725b5f
+37.529603,-77.441638,llm_what3words,BELLE,,E12 1 pt fishing on rocks trapped rising water high current ///jasper.fable.prairie pt removed from harm EMS eval no inj RTS,high,ollama:qwen2.5:14b,0f67a7db41db
+37.552224,-77.517472,llm_site,PONY,,"E12 crew made water rescue, no PFDs, river up fast w/ strong current. EMS care, all pts uninjured.",high,ollama:qwen2.5:14b,3e1ecc2b2535
+,,unplaced,,,"Note: E01 search for 2 swimmers swept by current, river rising. Both located and removed from harm, no PFDs. No injuries.",low,ollama:qwen2.5:14b,c3cc46a7b837
+,,unplaced,,,record_location(),low,ollama:qwen2.5:14b,c4322f005f00
+,,unplaced,,,Note does not specify the location of the patient on the river or at a known site.,low,ollama:qwen2.5:14b,e61817aa14b2
+,,unplaced,,,record_location tool called for further details on the exact location of the kayakers on the James River where the safety briefing was provided.,low,ollama:qwen2.5:14b,55d866bc75e9
+,,unplaced,,,Note: E16 1900 assisted 2 tubers who washed up on gravel bar mid-river and could not get to shore. Walked out via shallow channel to river left. Investigated. No inj.,low,ollama:qwen2.5:14b,a180bafb2a0e
+37.559948,-77.575019,llm_site,BOSH,,"Bosher's Dam for 2 SUP, no PFDs, EMS care to 1 pt minor injury, 2nd pt eval'd ok. Investigated.",high,ollama:qwen2.5:14b,1615e16aab0b
+37.527839,-77.46397,llm_what3words,,///thistle.copper.maple,"Caller reported 2 kayakers in trouble at Mayo Bridge. E16 checked, nothing there. Kayakers later confirmed at ///thistle.copper.maple, investigated, both fine, no incident.",high,ollama:qwen2.5:14b,44216cfd88e0
+37.520293,-77.417614,llm_site,ANC,,pt helped off rocks approx 100 yds downstream of Ancarrows,high,ollama:qwen2.5:14b,7e04f44da5b5
+37.528301,-77.475311,llm_site,42ND,,"42nd St lot. E16 on standby, gave info re PFDs and conditions. No injury, RTS.",low,ollama:qwen2.5:14b,9849b8a83bc7
+37.530741,-77.455404,llm_site,BELLE,,E01 cancelled en route for 2 tubers approx 200 yds above Belle Isle. River rising. Caller advised pts out of water.,high,ollama:qwen2.5:14b,16948614edcb
+37.559948,-77.575019,llm_site,BOSH,,bosher dam,high,ollama:qwen2.5:14b,91b7719e8460
+,,unplaced,,,record_location tool called for further details.,low,ollama:qwen2.5:14b,b7b0a80c7282
+37.533637,-77.445376,llm_site,TRED,,"Tredegar/Canal Walk, 2 rafters. B1 standby, provided info to public. No injury, B1 in service.",high,ollama:qwen2.5:14b,5454c719ec46
+,,unplaced,,,"Both located resting on left bank, no rescue needed.",low,ollama:qwen2.5:14b,e58a784acd1f
+37.528278,-77.474904,llm_what3words,,garnet drift fable,"E05 working rescue at ///garnet.drift.fable, 2 tubers caught in high fast water. Both pts removed from harm, EMS care, no injuries.",high,ollama:qwen2.5:14b,f97a967dc9ca
+37.52716,-77.469861,llm_site,REEDY,,"Located on shore, no rescue needed. No injury.",high,ollama:qwen2.5:14b,93b299d16ddc
+,,unplaced,,,"Note: E01 investigated report of 2 SUP paddlers struggling, inexperienced. No incident found, cleared.",low,ollama:qwen2.5:14b,7a3d3297966f
+,,unplaced,,,"Note: 1 kayaker, E01 standby, info given to public. No injury. RTS. The note does not specify a location for the patient.",low,ollama:qwen2.5:14b,a747a764dac1
+37.529984,-77.454411,llm_what3words,,hazel copper canoe,"Crew found group at ///hazel.copper.canoe, not at dam.",high,ollama:qwen2.5:14b,003f6d53e3a0
+37.52766,-77.43581,llm_gps,PIPE,,"raft hung on submerged rock, river rising. EtOH suspected. Pts assisted off, investigated, no injuries.",high,ollama:qwen2.5:14b,e01ab29866b0
+37.552224,-77.517472,llm_site,PONY,,E05 canc en route PWC 1 pt pony pasture no PFD river rising pt made shore per caller,high,ollama:qwen2.5:14b,93ff47ecf03b
+37.552224,-77.517472,llm_site,PONY,,"E12 med eval 2 tubers approx 150 yds above Pony Pasture, hit submerged rocks. Minor injuries, EMS care, investigated. Released.",high,ollama:qwen2.5:14b,4d3959d5a51e
+,,unplaced,,,record_location(),low,ollama:qwen2.5:14b,c992a5df2cdc
+37.551455,-77.517066,llm_what3words,,lantern hollow stone,"E05 med eval 1 wader at ///lantern.hollow.stone, no PFD. River rising, local gauge low but upstream coming up. EMS care, investigated, no injury.",high,ollama:qwen2.5:14b,4100fb6f8b3c
+37.52946,-77.478489,llm_what3words,,///juniper.lantern.clover,"Note: PWC w/ 2, no PFDs, reported at ///juniper.lantern.clover. E12 canceled en route.",high,ollama:qwen2.5:14b,8d8524f68140
+,,unplaced,,,record_location tool called for further details on the exact location of the rock near the right bank where the individuals were stranded.,low,ollama:qwen2.5:14b,2d741570b3f3
+37.528074,-77.43403,llm_site,MAYO,,"Located at the Mayo Br, E05 on standby and gave info to public.",high,ollama:qwen2.5:14b,b75a3480b16b
+37.537989,-77.494745,llm_what3words,,willow ember pebble,"Pts located at ///willow.ember.pebble, on bank and ok, no rescue needed.",high,ollama:qwen2.5:14b,c15e8003dc65
+37.560039,-77.574983,llm_what3words,,quiet island falcon,"Med eval x2 tubers at ///quiet.island.falcon. E12 EMS eval, investigated, no injuries found. Released.",high,ollama:qwen2.5:14b,51fbdc1e4248
+37.531882,-77.434462,llm_site,PIPE,,record_location tool,high,ollama:qwen2.5:14b,ef8dc1039d69
+37.559948,-77.575019,llm_site,BOSH,,E12 med eval 4 tubers bosher dam no PFDs hit submerged rocks EMS eval all 4 no inj investigated clr,high,ollama:qwen2.5:14b,fa41bf91b8c1
+,,unplaced,,,"Note: B1 canceled en route 0600, 1 kayaker reported overdue, caller advised pt home.",low,ollama:qwen2.5:14b,21b840f65855
+37.561655,-77.542582,llm_site,HUG,,"Water rescue approx 200 yds downstream of Huguenot Flatwater, 2 pts.",high,ollama:qwen2.5:14b,fd49f5d5f7d8
+37.528301,-77.475311,llm_site,42ND,,"Swimmer located at 42nd St on the bank, no rescue needed.",high,ollama:qwen2.5:14b,e1583f82bcab
+37.527653,-77.433565,llm_what3words,,fable crest timber,"E12 standby for 1 wader at ///fable.crest.timber, inexperienced, no PFD, submerged rocks in area. Info given, no injury.",high,ollama:qwen2.5:14b,702b7c63d442
+37.52773,-77.46925,llm_gps,PIPE,,"Pipeline Rapids (also called: pipeline rapids, pipeline walkway, the pipeline, pipeline) - note mentions high water and GPS coordinates match Pipeline Rapids area.",high,ollama:qwen2.5:14b,ebae8b05b7fb
+37.559948,-77.575019,llm_site,BOSH,,"pt at Bosher Dam. E16 searched there, pt found on shore, no rescue needed, no PFD.",high,ollama:qwen2.5:14b,9214be7cc1bc
+37.558554,-77.526598,llm_site,ZDAM,,"B1 rescue 2 canoeists approx 100 yds below the Z dam, canoe swamped, high fast water, no PFDs. Pts removed from harm, EMS care, uninjured.",high,ollama:qwen2.5:14b,e1338bca716e
+,,unplaced,,,"Note: 4 tubers assisted by E12, investigated. No injuries. RTS.",low,ollama:qwen2.5:14b,b1ba62875251
+37.52716,-77.469861,llm_site,REEDY,,"Note: E12 assist 2 tubers approx 200 yds upstream of Reedy Crk, investigated. No injury.",high,ollama:qwen2.5:14b,5d582209999c
+37.528191,-77.474179,llm_what3words,,///orbit.lantern.juniper,"1 pt activity unk at ///orbit.lantern.juniper, no PFD. B1 canceled en route.",high,ollama:qwen2.5:14b,dea0ddca6157
+,,llm_off_list,,///pebble.obrit.hollow,"E05 cxl en route, 4 tubers no PFDs reported at ///pebble.obrit.hollow.",high,ollama:qwen2.5:14b,2798148deea4
+37.561655,-77.542582,llm_site,HUG,,Pt located and removed from harm at Huguenot Flatwater.,high,ollama:qwen2.5:14b,25aa2e2ea5d3
+37.557853,-77.568415,llm_what3words,,jasper canyon fable,"E12 assisted 1 wader, inexperienced, no PFD, at ///jasper.canyon.fable. Investigated, no injury.",high,ollama:qwen2.5:14b,f4e2d18a3d9a
+37.560257,-77.574896,llm_what3words,,marble clover ripple,"E05 located pt at ///marble.clover.ripple, removed from harm.",high,ollama:qwen2.5:14b,057aa19d591c
+,,unplaced,,,"Note: B1 standby, 4 tubers w/o PFDs. Info provided to public re PFDs. No injuries.",low,ollama:qwen2.5:14b,0ee54d410228
+37.52716,-77.469861,llm_site,REEDY,,Swimmers were up at Reedy Creek.,high,ollama:qwen2.5:14b,1d6a95f32eee
+37.52201,-77.41891,llm_gps,,,"reported at 37.52201,-77.41891",high,ollama:qwen2.5:14b,2e742dbd30b8
+37.558554,-77.526598,llm_site,ZDAM,,"E01 2100 hrs, 3 kayakers at the Z-Dam, no PFDs. Assisted off water, investigated. No injury.",high,ollama:qwen2.5:14b,26b9f76499ab
+37.558554,-77.526598,llm_site,ZDAM,,E12 located them at Z-dam.,high,ollama:qwen2.5:14b,f6a45456b99b
+37.52833,-77.47084,llm_gps,,,pt moved to high ground. No injury.,low,ollama:qwen2.5:14b,b495b54fb3ee
+37.552224,-77.517472,llm_site,PONY,,1 rafter in high current at Pony Pasture,high,ollama:qwen2.5:14b,ddb69627c30c
+37.561655,-77.542582,llm_site,HUG,,"Note: B1 med eval 1 wader at Huguenot flatwater, cold water exposure, pt shivering. EMS care, investigated, minor, released.",high,ollama:qwen2.5:14b,d61eeb2671be
+,,unplaced,,,"1000 E16, mid-channel",low,ollama:qwen2.5:14b,a96b8c15f1e2
+37.520293,-77.417614,llm_site,ANC,,"E01 canc en route to Ancarrow's, 1 tuber no PFD in cold water, caller advised pt out.",high,ollama:qwen2.5:14b,7ddfb758e3e7
+37.549906,-77.510354,llm_what3words,,canoe juniper pebble,E16 search 1 kayaker ///canoe.juniper.pebble no PFD river rising fast cold high current submerged rocks body recovered EMS on scene pt DOA fatality PD notified,low,ollama:qwen2.5:14b,6288d2ecad5c
+,,unplaced,,,"Note: 2 tubers, cold water. E01 cancelled en route.",low,ollama:qwen2.5:14b,f8ccd570f54c
+,,unplaced,,,"Note: E05 rescue 1 swimmer in high current, cold water, river rising, no PFD. Pt removed from harm, EMS care, no injury.",low,ollama:qwen2.5:14b,24bfe6da8342
+37.559948,-77.575019,llm_site,BOSH,,bosher's dam,high,ollama:qwen2.5:14b,7fe21a45cf08
+,,unplaced,,,"E05 cancelled en route to Pony Pasture, 2 kayakers, river up, cold water. Kayakers reported home safe, 2900 blk Kensington Ave.",low,ollama:qwen2.5:14b,05dcb9f05cde
+37.52716,-77.469861,llm_site,REEDY,,"Reedy Creek, 1 swimmer, inexperienced, cold water.",high,ollama:qwen2.5:14b,e09a1ec844e6
+,,unplaced,,,"Note: E05 standby, 2 rafters, cold water. Info provided to public on hypothermia risk. No injury.",low,ollama:qwen2.5:14b,de442860ccb7
+,,unplaced,,,Note mentions rising river and cold water but does not specify a known location on the James River where the patient was located or rescued.,low,ollama:qwen2.5:14b,3dc93cdc6db2
+,,unplaced,,,record_location(),low,ollama:qwen2.5:14b,8220c34a7eb8
+37.559948,-77.575019,llm_site,BOSH,,"Crew rerouted to Bosher Dam after caller corrected. All 3 pts removed from harm in high cold water, river rising. EMS care, 1 pt injured.",high,ollama:qwen2.5:14b,39f2a050a776
+37.531882,-77.434462,llm_site,PIPE,,"E16 standby at Pipeline for 1 swimmer, cold water. Pt out of water on arrival, cancelled.",high,ollama:qwen2.5:14b,5b83f6985828
+,,unplaced,,,Note does not specify a known river site for the location of the kayakers.,low,ollama:qwen2.5:14b,30d1fe23875a
+37.56127,-77.54166,llm_gps,,,no PFD river rising local gauge low upstream up cold water inexp,low,ollama:qwen2.5:14b,f6c590836351
+,,llm_off_list,,///tundra.saddle.quuiet,"Note: 2 kayakers at ///tundra.saddle.quuiet, cold water, inexperienced. E16 assisted pts to bank, investigated. No injury.",high,ollama:qwen2.5:14b,0603e4ad579b
+,,unplaced,,,"Note: E12 assist 1 rafter hung up on submerged rocks, EtOH suspected, cold water. Pt assisted off, investigated. No injury.",low,ollama:qwen2.5:14b,6b172de0d086
+37.52748,-77.47066,llm_gps,,,E01 standby 1 SUP N37.52748 W77.47066 canc no inc,high,ollama:qwen2.5:14b,70fa9a68eed3
+37.552224,-77.517472,llm_site,PONY,,E16 search 1 fisherman stranded on rocks approx 150 yds above Pony Pasture,high,ollama:qwen2.5:14b,163a6f39463f
+,,unplaced,,,record_location tool called for further details on the location of the gravel bar where the swimmer was located.,low,ollama:qwen2.5:14b,295b5d5c2344
+37.530741,-77.455404,llm_site,BELLE,,"2 swimmers at Belle Isle, no PFDs, river rising. E05 assisted both to shore, investigated, no injury.",high,ollama:qwen2.5:14b,98694cb096a6
+37.55891,-77.57143,llm_gps,,,"Note: E01 standby at 37.55891, -77.57143, 1 pt activity unk. Info provided to public. No injury.",low,ollama:qwen2.5:14b,64ed04051bce
+,,unplaced,,,"Note: B1 search 1 tuber, submerged rocks in area. Pt located, no rescue needed, no injury.",low,ollama:qwen2.5:14b,d9ad4fae4e90
+37.552224,-77.517472,llm_site,PONY,,1 swimmer PP,high,ollama:qwen2.5:14b,4b82a5361001
+37.552224,-77.517472,llm_site,PONY,,"Pt located and removed from harm, injured, turned over to EMS.",high,ollama:qwen2.5:14b,c30f540a49f7
+37.530741,-77.455404,llm_site,BELLE,,"Note: 2 SUP no PFDs off Belle Isle. E12 canceled en route, paddlers made shore. Home address 1800 blk Monument Ave.",high,ollama:qwen2.5:14b,1be9ec273905
+37.559671,-77.573168,llm_what3words,,///parcel.copper.crest,"E01 2200 med eval 1 pt at ///parcel.copper.crest, activity unk. Minor injury, EMS care, investigated.",high,ollama:qwen2.5:14b,97c58ba2b032
+37.558554,-77.526598,llm_site,ZDAM,,E12 search 1 pt z dam activity unk inexp river up fast high current body recovered EMS on scene fatality PD and ME notified,high,ollama:qwen2.5:14b,dbe110557f85
+,,llm_off_list,,///tmber.stone.marble,E05 med eval 2 canoeists at ///tmber.stone.marble.,high,ollama:qwen2.5:14b,1870068ffe52
+37.52873,-77.4778,llm_gps,,,"1 pt at N37.52873 W77.47780, activity unk, no PFD. E16 EMS eval for minor injury, investigated, released.",high,ollama:qwen2.5:14b,e9b691deeca5
+37.552224,-77.517472,llm_site,PONY,,"Wader at Pony Pasture, no PFD, got knocked down when water came up, local gauge looked low but upstream rising.",high,ollama:qwen2.5:14b,c151297d186f
+37.53057,-77.45472,llm_gps,,,"E12 canceled en route, 1 fishing from bank at N37.53057 W77.45472, no PFD.",low,ollama:qwen2.5:14b,48309bc5e608
+,,unplaced,,,E01 canc en route 2 swimmers mayo br per caller out of water,low,ollama:qwen2.5:14b,0aa3ca503613
+37.537517,-77.49285,llm_what3words,,cobalt.jasper.ember,E01 1 rafter ///cobalt.jasper.ember no PFD assisted to bank inv no inj,low,ollama:qwen2.5:14b,b25d09a5f1fb
+,,unplaced,,,record_location tool called for note indicating no specific location for the rafter other than being referred to proper authority without further details on location.,low,ollama:qwen2.5:14b,45b5d08c9acd
+,,unplaced,,,Note mentions right bank but does not specify a known river site.,low,ollama:qwen2.5:14b,8a037701167d
+37.530741,-77.455404,llm_site,BELLE,,"E01 2000 hrs water rescue x2 canoeists at Belle Isle, canoe capsized in high fast water, river rising, no PFDs. EMS care, no injuries.",high,ollama:qwen2.5:14b,bdd5c983bba2
+37.532563,-77.441084,llm_site,BROWN,,"Tubers found at Brown's Isl, assisted ashore.",high,ollama:qwen2.5:14b,e02bf06f513f
+37.528074,-77.43403,llm_site,MAYO,,Note mentions the patient was approximately 100 yards upstream of the Mayo Bridge.,high,ollama:qwen2.5:14b,340b81816230
+37.532563,-77.441084,llm_site,BROWN,,"1 fishing on rocks at BI, river rising, high current.",high,ollama:qwen2.5:14b,5ee9000f932c
+,,unplaced,,,"No boats or pts found in the searched area, no usable location provided for patient(s).",low,ollama:qwen2.5:14b,8a460b707fd2
+37.51984,-77.41752,llm_gps,,,"crew redirected to 37.51984,-77.41752 where pt was found.",high,ollama:qwen2.5:14b,e04e90ff7172
+37.533637,-77.445376,llm_site,TRED,,"E16 search 2 kayakers at Tredegar, river rising, high current. Both removed from harm, 1 pt injured, EMS.",high,ollama:qwen2.5:14b,25322b5fa3b2
+,,unplaced,,,"Note: E01 1200 searched for 3 tubers swept off in high, fast-rising water, none wearing PFD. 2 self-rescued to right bank, EMS eval. 3rd pt recovered from eddy downstream, pronounced on scene. Fatality, LE notified.",low,ollama:qwen2.5:14b,9e064f98b1ab
+37.528113,-77.433984,llm_what3words,,canyon drift nectar,"E01 canceled en route, 2 kayakers no PFDs at ///canyon.drift.nectar.",high,ollama:qwen2.5:14b,167f8da62b58
+37.532563,-77.441084,llm_site,BROWN,,"E05 med eval 1 swimmer at Browns Island, no PFD, inexperienced. Minor injury, EMS care, investigated.",high,ollama:qwen2.5:14b,4a3b54bad1c9
+37.552224,-77.517472,llm_site,PONY,,"B1 investigated PWC report at Pony Pasture, no PFD reported. No incident found.",high,ollama:qwen2.5:14b,ddc973bd25ca
+37.558554,-77.526598,llm_site,ZDAM,,Pts were at Z-Dam.,high,ollama:qwen2.5:14b,6f9a877821b7
+,,unplaced,,,"Note: E16 rescue 2 kayakers, river rising fast, high current. Both removed from harm, EMS care, no injuries. RTS.",low,ollama:qwen2.5:14b,8f6f0d2bc919
+,,unplaced,,,"Note: E05 assist 1 swimmer back to shore. Investigated, no injury. Pt declined EMS.",low,ollama:qwen2.5:14b,d384461376eb
+37.55168,-77.516863,llm_what3words,,velvet basin drift,"1 wader needing assist at ///velvet.basin.drift. E16 helped pt out, investigated. No injury.",high,ollama:qwen2.5:14b,8e503633d327
+,,unplaced,,,record_location tool called,low,ollama:qwen2.5:14b,a4ea1430ecb9
+37.551929,-77.519638,llm_what3words,,copper garnet ripple,"E05 2100 water rescue 2 SUP at ///copper.garnet.ripple. Boards hung on submerged rocks, river rising, high current. EMS care, no injuries.",high,ollama:qwen2.5:14b,1412ad1f7bee
+37.52716,-77.469861,llm_site,REEDY,,B1 assist 2 canoeists reedy crk no PFDs river rising hung on submerged rocks assisted off inv no inj,high,ollama:qwen2.5:14b,14c4c03e775d
+37.520293,-77.417614,llm_site,ANC,,"E16 search 1 PWC operator at Ancarrows, inexperienced, river came up fast w/ high current. Body recovered, EMS on scene, fatality. PD notified.",high,ollama:qwen2.5:14b,a214bdc7fd80
+37.530741,-77.455404,llm_site,BELLE,,E16 med eval 2 fishing on rocks belle isle 1 pt minor inj EMS care inv refused txp,high,ollama:qwen2.5:14b,d4734355c53f
+,,unplaced,,,"Note: 2 tubers, no PFDs. E01 assisted to bank, investigated, no injury.",low,ollama:qwen2.5:14b,c993f7cd0520
+,,unplaced,,,No pts located. No incident found.,low,ollama:qwen2.5:14b,7702c4b8f9b0
+,,unplaced,,,record_location tool called for further details on the exact location of the incident.,low,ollama:qwen2.5:14b,829cd67fc907
+,,unplaced,,,"B1 investigated report of 2 kayakers in distress. No incident found, RTS.",low,ollama:qwen2.5:14b,86c065b0fd9a
+37.531882,-77.434462,llm_site,PIPE,,Med eval 2 tubers approx 100 yds below Pipeline.,high,ollama:qwen2.5:14b,2efd0b95f030
+37.552224,-77.517472,llm_site,PONY,,"E01 assist 2 kayakers across from Pony Pasture on the far side, approx 200 yds. Investigated, no injury.",high,ollama:qwen2.5:14b,1614390612c2
+37.559948,-77.575019,llm_site,BOSH,,"B1 standby for 4 tubers approx 250 yds upstream of Bosher Dam, no PFDs, EtOH suspected. Info provided re dam hazard. No injury.",high,ollama:qwen2.5:14b,91487dc940f5
+,,unplaced,,,"Note: E01 1400 stood by for 3 tubers as water came up fast. Group reached right bank without assist. Canceled, no incident.",low,ollama:qwen2.5:14b,6f045d3bd5cf
+,,unplaced,,,"Note: B1 rescue 2 kayakers in high fast water, river rising. Pts removed from harm, EMS care. No injuries.",low,ollama:qwen2.5:14b,d47f5cbebd5a
+37.528301,-77.475311,llm_site,42ND,,"42nd St, 1 PWC operator inexperienced. E01 standby, cancelled no incident.",high,ollama:qwen2.5:14b,fb850a1c621e
+37.51089,-77.41778,llm_gps,MAYO,,"Body recovered, EMS on scene, fatality. Raft located at 37.51089, -77.41778.",high,ollama:qwen2.5:14b,94608266374e
+37.552224,-77.517472,llm_site,PONY,,E16 canceled en route after update that kayaker was at Pony Pasture and off the water.,high,ollama:qwen2.5:14b,608819924096
+,,unplaced,,,"Note: 4 tubers, no PFDs, EtOH suspected. E05 canceled en route.",low,ollama:qwen2.5:14b,f34b4a8f02e6
+37.531882,-77.434462,llm_site,PIPE,,PIPE rapids mentioned as the location where the patient was clinging to a rock mid-channel.,high,ollama:qwen2.5:14b,2c5b4457f8f9
+,,unplaced,,,"Note: B1 search for 2 canoeists no PFDs, located on shore. No rescue needed.",low,ollama:qwen2.5:14b,181d67c92079
+,,llm_off_list,,1000 E01 left bank,record_location,low,ollama:qwen2.5:14b,c457e1ab3643
+,,unplaced,,,"record_location tool called for verification of locations of the three tubers, but no specific rescue site was identified as all individuals were located without injury and no rescue was needed.",low,ollama:qwen2.5:14b,cbd30a6c3625
+37.52716,-77.469861,llm_site,REEDY,,E12 assist 1 tuber reedy crk river rising inv no inj RTS,high,ollama:qwen2.5:14b,ea62a313fe69
+,,unplaced,,,record_location(),low,ollama:qwen2.5:14b,6f66b9f36267
+37.52716,-77.469861,llm_site,REEDY,,"E16 2100 hrs, 3 waders approx 150 yds below Reedy Creek. Assisted to bank, investigated, no injury.",high,ollama:qwen2.5:14b,5ee664ca0b98
+,,unplaced,,,"Note: 2 swimmers knocked down in high current, river up. E05 EMS care for minor injuries, investigated. Released at scene.",low,ollama:qwen2.5:14b,51190c456e17
+,,unplaced,,,No raft or pts found. No incident.,low,ollama:qwen2.5:14b,19d59e47aece
+,,unplaced,,,"No incident found, no craft located despite investigation.",low,ollama:qwen2.5:14b,6124ae51134d
+,,unplaced,,,record_location tool called for further details on the exact location of the gravel bar.,low,ollama:qwen2.5:14b,32f063e62b30
+37.528301,-77.475311,llm_site,42ND,,"Raft found at 42nd St, both pts removed from harm.",high,ollama:qwen2.5:14b,7df29b66f7a4
+,,unplaced,,,record_location tool called for further details on the exact location of the submerged rocks near the right bank where the paddlers were stuck.,low,ollama:qwen2.5:14b,44a7e86bcab6
+37.530741,-77.455404,llm_site,BELLE,,"E12 med eval 2 swimmers at Belle Isle, no PFDs. 1 pt minor laceration, EMS care, investigated.",high,ollama:qwen2.5:14b,c6654630be60
+,,unplaced,,,record_location tool called here.,low,ollama:qwen2.5:14b,f7dd4b3097a1
+,,unplaced,,,No incident found. Pt not located.,low,ollama:qwen2.5:14b,2013692dfef1
+37.528301,-77.475311,llm_site,42ND,,PWC w/ 2 at 42nd Street,high,ollama:qwen2.5:14b,cbc1c939a070
+,,llm_off_list,,right bank,"Pt located on right bank, no rescue needed.",high,ollama:qwen2.5:14b,5b03fc3aaadb
+,,llm_off_list,,bank otter anchor,E12 2200 search 1 pt ///bank.otter.anchor act unk no PFD inexp river up fast local gauge low upstream rising high current pt removed from harm no inj,high,ollama:qwen2.5:14b,bb4aa65cdf11
+37.528301,-77.475311,llm_site,42ND,,"Note mentions fishing at 42nd st, which is a known river site.",high,ollama:qwen2.5:14b,afd575869051
+,,unplaced,,,"Note does not specify a known river site for the patient's location, only mentions a gravel bar river left.",low,ollama:qwen2.5:14b,fa2bb2660b5c
+37.52716,-77.469861,llm_site,REEDY,,"Note: E05 search for 2 swimmers at Reedy Crk, cold water. Both located on shore, no rescue needed.",high,ollama:qwen2.5:14b,c38f33f12114
+37.559948,-77.575019,llm_site,BOSH,,re dam no inj,high,ollama:qwen2.5:14b,f649bac6ada9
+37.520293,-77.417614,llm_site,ANC,,"B1 med eval 1 swimmer at Ancarrow's boat landing, high cold water, river rising.",high,ollama:qwen2.5:14b,5658d0a60e4b
+37.52716,-77.469861,llm_site,REEDY,,Caller updated raft was at Reedy Creek and off the river.,high,ollama:qwen2.5:14b,f0c1d98fb509
+,,llm_off_list,,rock mid-channel,Rescued from rock mid-channel by rope team to right bank.,high,ollama:qwen2.5:14b,4e7ca414595f
+,,unplaced,,,"Note: 2 tubers, no PFDs, caught in high cold water, river came up while local gauge showed low. E12 removed both from harm, EMS care, no injuries.",low,ollama:qwen2.5:14b,71aab84ac020
+37.533637,-77.445376,llm_site,TRED,,Note: E16 2100 canceled en route to Canal Walk for 3 tubers.,high,ollama:qwen2.5:14b,2504b1a7990c
+37.52787,-77.4344,llm_gps,,,"Note: E12 rescue 1 kayaker at 37.52787, -77.43440. High cold water, river rising. Pt removed from harm, EMS care, no injury.",high,ollama:qwen2.5:14b,a5caf074de8a
+37.533637,-77.445376,llm_site,TRED,,"E01 removed both from harm, EMS care, no injuries.",high,ollama:qwen2.5:14b,e6c2355a0163
+,,unplaced,,,record_location tool called for further details on the exact location of the rocks where the patient was stuck.,low,ollama:qwen2.5:14b,a026ede1daaa
+,,unplaced,,,"Dispatched for 2 swimmers poss in distress. E12 staged and stood by at ///marble.heron.meadow. Both out of water on arrival, no incident. Cancelled 1215.",low,ollama:qwen2.5:14b,5103e5d0920c
+,,unplaced,,,record_location tool called for further details on pt's location along the shoreline.,low,ollama:qwen2.5:14b,27659cb6a90b
+37.528301,-77.475311,llm_site,42ND,,"Note mentions canoe ashore near 42nd St, both OK, indicating patient location was near 42nd St entrance.",high,ollama:qwen2.5:14b,117dff669e87
+,,unplaced,,,"Note: E16 search for SUP rider reported missing, no PFD. Pt found on board, paddled in on own. Cold water, no injury. No rescue needed, RTS 1740.",low,ollama:qwen2.5:14b,79eade43871f
+37.530741,-77.455404,llm_site,BELLE,,"E05 to Belle Isle for 2 kayakers. ETOH suspected, both inexperienced, water cold. No injuries. Referred to park police/proper authority. E05 in service.",high,ollama:qwen2.5:14b,90c19c715e43
+,,unplaced,,,"Note: Kayaker reported overdue. E16 searched, located pt hung on submerged rocks but self-freed, no PFD. No rescue needed, cold water, pt uninjured.",low,ollama:qwen2.5:14b,68ecd8044a5e
+37.530741,-77.455404,llm_site,BELLE,,"Swimmer caught in rising current off Belle Isle. E12 crew removed pt from water, EMS eval, no injury.",high,ollama:qwen2.5:14b,69ff0dd122dd
+37.532563,-77.441084,llm_site,BROWN,,"E01 to Brown's Isl for 2 tubers, cold water, no injuries. Pts reside 3100 blk Hanover Ave. Referred to proper authority.",high,ollama:qwen2.5:14b,a053e34eaab3
+37.528301,-77.475311,llm_site,42ND,,"Note: 2200 hrs E05 working rescue, 2 swimmers in high water at 42nd Street after rapid rise. Both removed from harm, EMS eval neg for injury. One pt home addr 1500 blk Chamberlayne Ave.",high,ollama:qwen2.5:14b,9ca625e67b70
+,,unplaced,,,"Note: E01 0900 search for 2 kayakers overdue in cold water. Found on right bank drying off, no rescue needed. No inj.",low,ollama:qwen2.5:14b,f1c0626ec586
+37.528301,-77.475311,llm_site,42ND,,42nd st,high,ollama:qwen2.5:14b,99c82ddaebb3
+,,unplaced,,,E16 pwc op poss hurt no PFD river rising fast ///quiet.tundra.coobalt EMS eval pt no inj investigated RTS,low,ollama:qwen2.5:14b,a8ed91faf0ed
+37.53022,-77.453913,llm_what3words,,NONE,"Note: E01 dispatched 1000 for 2 swimmers at ///ledger.quiet.glacier. Canceled en route, no incident.",high,ollama:qwen2.5:14b,7519f67a6d4f
+37.528301,-77.475311,llm_site,42ND,,42nd St,high,ollama:qwen2.5:14b,66ebb3d1521e
+37.534078,-77.487994,llm_what3words,,canyon quiet ember,Pt at ///canyon.quiet.ember,high,ollama:qwen2.5:14b,eef350cbf9ee
+37.561655,-77.542582,llm_site,HUG,,2 fishermen on rocks at Huguenot flatwater,high,ollama:qwen2.5:14b,c6098356eddf
+37.53194,-77.4477,llm_gps,,,pt removed from water EMS care inj transported,high,ollama:qwen2.5:14b,61c4b776222e
+37.520293,-77.417614,llm_site,ANC,,2 kayakers pinned approx 200 yds below Ancarrow's Landing.,high,ollama:qwen2.5:14b,37fce4200875
+,,unplaced,,,"E12 checked area for reported kayaker in distress. Nothing found, no incident. RTS 1520.",low,ollama:qwen2.5:14b,3cb4a13306cc
+37.558123,-77.525835,llm_what3words,,garnet otter hollow,pt c/o minor inj EMS eval investigated RTS,high,ollama:qwen2.5:14b,790d22c8bb99
+37.52744,-77.43579,llm_gps,,,E01 SUP pt needs help N37.52744 W77.43579 assisted to shore invest no inj RTS,high,ollama:qwen2.5:14b,e523f43496c3
+,,unplaced,,,record_location tool called for further investigation as the exact site is not specified in the note.,low,ollama:qwen2.5:14b,86aa38f5a070
+37.52733,-77.43487,llm_gps,,,"Note: Kayaker at 37.52733,-77.43487, ETOH suspected, water coming up. E12 on scene, pt uninjured, referred to proper authority.",high,ollama:qwen2.5:14b,6da7f55fefb3
+37.561655,-77.542582,llm_site,HUG,,"Located, OK, no rescue needed. Home addr 3300 blk Kensington Ave.",high,ollama:qwen2.5:14b,44257d68e097
+37.533637,-77.445376,llm_site,TRED,,E12 raft 2 pts in water no PFDs high water rising fast by Tredegar crew pulled both out EMS eval no inj RTS,high,ollama:qwen2.5:14b,db0622f931d9
+37.52736,-77.43596,llm_gps,,,"Called for pt at 37.52736, -77.43596, activity unk. E05 cancelled en route 1110.",high,ollama:qwen2.5:14b,c2573c41e1d0
+37.552224,-77.517472,llm_site,PONY,,"Boat 1 water rescue at Pony Pasture, PWC with 2 aboard in fast high water after rise. Both brought to shore, EMS eval, no injuries.",high,ollama:qwen2.5:14b,1034fbe4b7c8
+37.559948,-77.575019,llm_site,BOSH,,"Bank fisherman at Bosher's Dam needed assist getting out. E05 assisted, investigated, no injury.",high,ollama:qwen2.5:14b,53f9440e6013
+,,unplaced,,,record_location tool called for further details on the exact location of the gravel bar near the right bank where the incident occurred.,low,ollama:qwen2.5:14b,ee13a3cd3c3a
+37.52896,-77.47793,llm_gps,,N37.52896 W77.47793,pt found at N37.52896 W77.47793,high,ollama:qwen2.5:14b,acf274be0542
+37.530741,-77.455404,llm_site,BELLE,,"Pt located on the rocks at Belle Isle instead, no injury.",high,ollama:qwen2.5:14b,03f67865a3a8
+37.528301,-77.475311,llm_site,42ND,,"Kayaker swept in high current after river rose at 42nd St access. E05 removed pt from harm, EMS eval, no injury.",high,ollama:qwen2.5:14b,36c2ead8cd1e
+37.528301,-77.475311,llm_site,42ND,,"Raft w/ 2 no PFDs overturned in high water near 42nd Street. E01 searched, located both, removed from water. Rescued, no injuries.",high,ollama:qwen2.5:14b,eac13a7b4d92
+37.552224,-77.517472,llm_site,PONY,,E01 cancelled for 3 tubers at Pony Pasture.,high,ollama:qwen2.5:14b,60b1aa303203
+37.528301,-77.475311,llm_site,42ND,,"2 kayakers at 42nd St requested help. E01 assisted, investigated, no injury noted.",high,ollama:qwen2.5:14b,d305c789bc4e
+37.52716,-77.469861,llm_site,REEDY,,"E12 stood by at Reedy Crk for rafter, no PFD. Local gage low but upstream rising, river coming up. Info given to pt/public on conditions.",high,ollama:qwen2.5:14b,d3e9b6c72308
+37.530741,-77.455404,llm_site,BELLE,,"2100 fisherman on Belle Isle rocks, water coming up though local gage low. E05 assisted pt off, investigated, no inj.",high,ollama:qwen2.5:14b,c032217becff
+,,unplaced,,,"Note: 3 tubers needed help as river came up. E01 assisted all 3 to shore, investigated, no injuries.",low,ollama:qwen2.5:14b,0935186745a9
+37.52019,-77.41777,llm_gps,,,"E12 investigated report of 2 kayakers at 37.52019,-77.41777, no PFDs, river rising. No incident found.",low,ollama:qwen2.5:14b,ab6c6c028fb9
+,,unplaced,,,"Note: Boat 1 EMS eval for 2 PWC occupants, no PFDs, river up. No injuries. Investigated, RTS.",low,ollama:qwen2.5:14b,c7a8df788933
+,,llm_off_list,,Ripple Meadow Parcels,E01 swimmer no PFD ///ripple.meadow.parcels minor inj EMS care invest pt refused txp,high,ollama:qwen2.5:14b,a18ca6aaaa2c
+37.528301,-77.475311,llm_site,42ND,,E12 for swimmer at the 42nd St entrance,high,ollama:qwen2.5:14b,abce88b9220a
+37.551551,-77.518874,llm_what3words,,willow hollow thistle,Swimmer in high current after rapid rise. Boat 1 removed pt from water at ///willow.hollow.thistle.,high,ollama:qwen2.5:14b,42ff01375f4c
+37.552224,-77.517472,llm_site,PONY,,"Boat 1 to Pony Pasture for 2 on SUPs, no PFDs. EMS care, 1 minor injury eval. Investigated.",high,ollama:qwen2.5:14b,fb83fdcdc6cd
+37.530741,-77.455404,llm_site,BELLE,,"pt found OK, no rescue needed. E05 searched, off Belle Isle",high,ollama:qwen2.5:14b,e8d9dbbe9f31
+37.531882,-77.434462,llm_site,PIPE,,"E05 working rescue at Pipeline, canoe with 2 capsized in high water. Both removed, EMS eval, no injury.",high,ollama:qwen2.5:14b,498bb43c8c36
+37.501701,-77.42092,llm_what3words,,,"Boat 1 checked ///thistle.kettle.clover for 2 swimmers, ETOH suspected. No incident found.",low,ollama:qwen2.5:14b,9394b0429203
+37.52762,-77.43696,llm_gps,,,record_location(),high,ollama:qwen2.5:14b,b96856d935c2
+37.529065,-77.45849,llm_what3words,,NONE,"Note: Boat 1 investigated report of canoeist at ///clover.glacier.stone. No incident found, cancelled.",low,ollama:qwen2.5:14b,9abeb3b2b9bb
+37.530741,-77.455404,llm_site,BELLE,,"4 tubers at Belle Isle, gage low here but river rising upstream, submerged rocks. E01 stood by, gave info to public.",high,ollama:qwen2.5:14b,12d9c14947e9
+37.52716,-77.469861,llm_site,REEDY,,"Note mentions the patient location as approx 100 yds downstream of Reedy Creek, which is a known river site.",high,ollama:qwen2.5:14b,8d7cd6a446f8
+37.55982,-77.573798,llm_what3words,,hollow quiet otter,"E05 standby for swimmer at ///hollow.quiet.otter, no PFD, inexperienced. Info given to pt, no assist needed.",high,ollama:qwen2.5:14b,c39454fc4086
+,,unplaced,,,"Fisherman needed assist, river rising. E16 assisted, investigated, no injury.",low,ollama:qwen2.5:14b,ab1907e4db75
+,,unplaced,,,Note: E05 stood by 1300 for angler without PFD on rock as water rose fast. Pt got off rock to left bank on own. Canceled.,low,ollama:qwen2.5:14b,808d8bb324f1
+37.52716,-77.469861,llm_site,REEDY,,"Note: Boat 1 standby Reedy for 2 anglers. Nothing needed, cancelled 0930.",high,ollama:qwen2.5:14b,146aeb39ec91
+37.528301,-77.475311,llm_site,42ND,,"pt located OK, no rescue needed at 42nd Street",high,ollama:qwen2.5:14b,7a6368af9c53
+37.557008,-77.558977,llm_what3words,,///timber.thistle.ledger,Note: E05 dispatched for 2 rafters at ///timber.thistle.ledger. Canceled en route.,high,ollama:qwen2.5:14b,1ba9f321dbd8
+37.55128,-77.51614,llm_gps,PIPE,,"Pipeline Rapids (also called: pipeline rapids, pipeline walkway, the pipeline, pipeline) - note mentions pinned on submerged rocks and provides GPS coordinates matching Pipeline Rapids area.",high,ollama:qwen2.5:14b,13820ebf5a6d
+37.558554,-77.526598,llm_site,ZDAM,,Z dam area,high,ollama:qwen2.5:14b,565455118f85
+,,llm_off_list,,right bank,"Pt out on right bank on arrival, minor injury to leg. EMS care, investigated.",low,ollama:qwen2.5:14b,d53d7cf6b734
+,,unplaced,,,record_location tool called for further details.,low,ollama:qwen2.5:14b,66594073005a
+37.56211,-77.54465,llm_gps,,,"SUP paddler reported at 37.56211,-77.54465. Boat 1 canceled en route 1005.",high,ollama:qwen2.5:14b,c43f2bdd5880
+37.559948,-77.575019,llm_site,BOSH,,"pts were not at Tredegar/Canal Walk, found at Bosher's Dam in high water on submerged rocks.",high,ollama:qwen2.5:14b,391993fc22db
+37.530741,-77.455404,llm_site,BELLE,,"E12 investigated kayaker reported approx 150 yds upstream of Belle Isle, no PFD, novice. No incident found.",low,ollama:qwen2.5:14b,e8c6ab1485c4
+37.558554,-77.526598,llm_site,ZDAM,,pt was actually up at the Z Dam,high,ollama:qwen2.5:14b,eafbe2473c6d
+37.531882,-77.434462,llm_site,PIPE,,body recovered approx 200 yds below Pipeline,high,ollama:qwen2.5:14b,218eee48826e
+37.530618,-77.480636,llm_what3words,,,"E01 investigated 3 tubers at ///juniper.meadow.otter, no incident found.",low,ollama:qwen2.5:14b,33c15a79a9c1
+,,unplaced,,,"Note: E05 2200 stood by for lone rafter on left bank, ETOH suspected. Pt left scene on foot. Canceled, no incident.",low,ollama:qwen2.5:14b,79aa1da519f7
+37.528301,-77.475311,llm_site,42ND,,approx 100 yds downstream of 42nd St.,low,ollama:qwen2.5:14b,dd1e56798877
+37.559948,-77.575019,llm_site,BOSH,,Bosher dam,high,ollama:qwen2.5:14b,e960f6c71a71
+37.55154,-77.51801,llm_gps,,,Note mentions GPS coordinates but no specific river site.,high,ollama:qwen2.5:14b,cfc935ff5bab
+37.531882,-77.434462,llm_site,PIPE,,Pipeline Rapids,high,ollama:qwen2.5:14b,86f1721af495
+37.52984,-77.45779,llm_gps,,,"Note: 2 tubers at 37.52984, -77.45779, no PFDs, first time on river. E01 on scene, no injuries, referred to proper authority.",high,ollama:qwen2.5:14b,0ec22b68e840
+37.531376,-77.44379,llm_what3words,,glacier quill velvet,///glacier.quill.velvet,high,ollama:qwen2.5:14b,b6a2551f8109
+37.531882,-77.434462,llm_site,PIPE,,"Note mentions Pipeline as the location where the kayaker was up at, despite initial dispatch to Mayo Bridge.",high,ollama:qwen2.5:14b,53da3f56fc0f
+37.53099,-77.44443,llm_gps,PONY,,"Initially sent to Pony Pasture for swimmer, updated to 37.53099, -77.44443.",high,ollama:qwen2.5:14b,4bd633a8db8f
+37.530741,-77.455404,llm_site,BELLE,,E05 assisted 2 novice kayakers approx 100 yds across from Belle Isle on the north side.,high,ollama:qwen2.5:14b,1be54e552059
+,,unplaced,,,record_location tool called for further details on the exact location near the right bank of the river.,low,ollama:qwen2.5:14b,0c09eb1d57e6
+,,unplaced,,,"Note: 1700 E16 dispatched for 3 tubers without PFDs reported in trouble. Canceled en route, group off water. RTS.",low,ollama:qwen2.5:14b,2f58a614f106
+37.552224,-77.517472,llm_site,PONY,,"Swimmer, ETOH suspected, swept off at Pony Pasture as water came up fast. E12 searched, removed pt from high cold water. No injury. Pt resides 1200 blk Bellevue Ave.",high,ollama:qwen2.5:14b,8b272a771252
+,,llm_off_list,,2600 blk Kensington Ave,E01 checked Pony Pasture for swimmer in cold water. No incident found. RP gave pt address 2600 blk Kensington Ave.,low,ollama:qwen2.5:14b,5753cbd7dd55
+37.552224,-77.517472,llm_site,PONY,,"E01 working rescue, tuber swept in high current at the Pony, river rising and cold. Pt removed from harm, EMS eval, no injury.",high,ollama:qwen2.5:14b,6d37654563b0
+,,unplaced,,,record_location tool called for further details on the exact location where the swimmers were rescued as the note does not specify a known river site.,low,ollama:qwen2.5:14b,4b7aa00b20ac
+37.527508,-77.46923,llm_what3words,,falcon river bank,"Note: Boat 1 at ///falcon.river.bank for 2 rafters needing assist, cold water. Assisted, investigated, no injury.",high,ollama:qwen2.5:14b,eee581897ec1
+37.532563,-77.441084,llm_site,BROWN,,"E12 at Browns Island for swimmer, no PFD, cold water. No injury. Referred to proper authority.",high,ollama:qwen2.5:14b,abcb30c002c1
+37.533637,-77.445376,llm_site,TRED,,Tredegar,high,ollama:qwen2.5:14b,622d626806a2
+,,unplaced,,,"Note: Boat 1 stood by 1600 for 2 kayakers in cold water mid-channel, no PFDs. Both reached right bank unassisted. Canceled.",low,ollama:qwen2.5:14b,7c8e28a9b9bf
+37.527985,-77.434138,llm_what3words,,harbor otter glacier,"Pts located at ///harbor.otter.glacier after search, not at Ancarrow's.",high,ollama:qwen2.5:14b,b63d70c7f89c
+37.530741,-77.455404,llm_site,BELLE,,"Pt found holding onto rock near left bank, removed from harm into boat.",high,ollama:qwen2.5:14b,3a00f2eeba5e
+37.55891,-77.52767,llm_gps,42ND,,record_location(),high,ollama:qwen2.5:14b,c7c4aa3c4142
+,,unplaced,,,"Note: E12 canceled en route for 2 tubers, cold water.",low,ollama:qwen2.5:14b,b80e00988890
+37.528665,-77.474926,llm_what3words,,///glacier.nectar.cobalt,Novice kayaker at ///glacier.nectar.cobalt needed assist.,high,ollama:qwen2.5:14b,3dbaa85b2666
+,,unplaced,,,record_location tool called for further details on the exact location of the incident.,low,ollama:qwen2.5:14b,e9cdceafb94c
+,,unplaced,,,record_location tool called.,low,ollama:qwen2.5:14b,a42a50b5e110
+,,llm_off_list,,///rope.neectar.bank,"E16 investigated, no PFD, inexperienced, no incident found.",low,ollama:qwen2.5:14b,53ed62afb9c4
+37.53086,-77.45364,llm_gps,,,"E01 checked 37.53086,-77.45364 for kayaker. No incident found.",low,ollama:qwen2.5:14b,bdb1a3ab523d
+37.527592,-77.469017,llm_what3words,,///bank.heron.anchor,pt found at ///bank.heron.anchor,high,ollama:qwen2.5:14b,89dc8781522c
+,,unplaced,,,Note does not specify a known river site for the patient's location.,low,ollama:qwen2.5:14b,8507973da337
+37.529859,-77.442038,llm_what3words,,bank timber quiet,"Note: Boat 1 assisted 2 SUP riders at ///bank.timber.quiet. River rising, gage low locally but upstream up. No injuries.",high,ollama:qwen2.5:14b,583034718245
+,,unplaced,,,Note mentions fatality but does not specify a location for the patient.,low,ollama:qwen2.5:14b,4bf5a87ee521
+,,unplaced,,,"Note states that the pts self-rescued and the call was canceled en route, providing no specific location where the patients were located or rescued.",low,ollama:qwen2.5:14b,64d0117d3239
+37.551609,-77.515323,llm_what3words,,cobalt nectar bank,record_location,high,ollama:qwen2.5:14b,99396a61ee91
+37.530741,-77.455404,llm_site,BELLE,,"E12 EMS care 2 tubers struck submerged rocks approx 200 yds below Belle Isle. No inj, investigated.",high,ollama:qwen2.5:14b,b30492169c0a
+37.528301,-77.475311,llm_site,42ND,,E01 kayaker 42nd st canc enroute 1810 RTS,high,ollama:qwen2.5:14b,271c6e7bae45
+37.53109,-77.48224,llm_gps,BROWN,,"pts were at 37.53109,-77.48224. Boat 1 contacted 2 tubers there",high,ollama:qwen2.5:14b,3bbd008602b6
+,,unplaced,,,No usable patient location provided in the note.,low,ollama:qwen2.5:14b,1142580b4b6d
+37.530147,-77.456157,llm_what3words,,///falcon.willow.kettle,E01 2 swimmers no PFDs ///falcon.willow.kettle gage low local upstream rising water came up minor inj EMS eval invest,low,ollama:qwen2.5:14b,0b574e903cfd
+37.5287,-77.47753,llm_gps,,,"Cancelled, no incident.",low,ollama:qwen2.5:14b,5a30d6699512
+37.528074,-77.43403,llm_site,MAYO,,Mayo's Bridge,high,ollama:qwen2.5:14b,5d13a4c69f1c
+37.533637,-77.445376,llm_site,TRED,,rescue 2 swimmers in high current at the Canal Walk,high,ollama:qwen2.5:14b,b5331c7d7471
+37.528074,-77.43403,llm_site,MAYO,,"Search for tuber at 14th St/Mayo Bridge. E05 located pt, no rescue needed.",high,ollama:qwen2.5:14b,1e9c22d1f1f4
+37.552224,-77.517472,llm_site,PONY,,"Canoeist was at Pony Pasture, no PFD, hung on submerged rocks.",high,ollama:qwen2.5:14b,4d3f06746cbb
+37.530741,-77.455404,llm_site,BELLE,,E01 searched for 2 kayakers swept in high water at Belle Isle after rise. Both located and removed from harm. No injuries.,high,ollama:qwen2.5:14b,445ed98c2399
+37.561955,-77.543439,llm_what3words,,///falcon.copper.rope,"Swimmer reported missing. E12 search, pt found at ///falcon.copper.rope, OK. No rescue needed.",high,ollama:qwen2.5:14b,07f86cdb3312
+37.559948,-77.575019,llm_site,BOSH,,rescued swimmer below Bosher Dam,high,ollama:qwen2.5:14b,8cda4468ec2c
+37.531882,-77.434462,llm_site,PIPE,,Note mentions that 3 tubers were at Pipeline.,high,ollama:qwen2.5:14b,262eb1148eb3
+37.53424,-77.48995,llm_gps,,,"Pt found at N37.53424 W77.48995, OK.",high,ollama:qwen2.5:14b,874c97a93a85
+37.56031,-77.57487,llm_gps,,,"Note: E16 standby for swimmer at N37.56031 W77.57487. Nothing found, cancelled.",low,ollama:qwen2.5:14b,f836adcf57e6
+37.559948,-77.575019,llm_site,BOSH,,Bosher Dam,high,ollama:qwen2.5:14b,013b9a837550
+37.558554,-77.526598,llm_site,ZDAM,,"0700 E16 kayaker pinned in high water at the Z-Dam after fast rise, no PFD, novice. Pt removed from harm, EMS care for injuries. Pt lives 2800 blk W Franklin St.",high,ollama:qwen2.5:14b,b12947668627
+37.529373,-77.456556,llm_what3words,,1600 blk Ellwood Ave,Pt reported from 1600 blk Ellwood Ave.,low,ollama:qwen2.5:14b,9ff589bc6b76
+37.531882,-77.434462,llm_site,PIPE,,swimmer out of water at Pipeline,high,ollama:qwen2.5:14b,06c726608492
+37.528074,-77.43403,llm_site,MAYO,,PWC operator found at Mayo Bridge in high water after river rose.,high,ollama:qwen2.5:14b,46b5468eff2a
+,,llm_off_list,,Mayo Bridge,"E12 assisted both off, investigated, no inj.",high,ollama:qwen2.5:14b,66b269c28f3a
+,,unplaced,,,Note: E05 canceled en route for swimmer. No further.,low,ollama:qwen2.5:14b,10a26588e8d4
+37.528378,-77.473108,llm_what3words,BELLE,,pt ended up at ///river.orbit.anchor,high,ollama:qwen2.5:14b,680b4c5d0273
+37.56026,-77.57489,llm_gps,,,"E12 swimmer no PFD 37.56026,-77.57489 assisted out invest no inj RTS",high,ollama:qwen2.5:14b,3f2ef0c8ab79
+,,llm_off_list,,left bank,Pt out on left bank.,high,ollama:qwen2.5:14b,9e4c8a747f0c
+,,llm_off_list,,gravel bar river right,"Engine 05 1000 EMS eval of novice kayaker after swim, pt on gravel bar river right. No injury. Investigated, advised on paddling w/ group.",low,ollama:qwen2.5:14b,cd19e50853a8
+37.559948,-77.575019,llm_site,BOSH,,pts actually found at Bosher Dam,high,ollama:qwen2.5:14b,992206c8624b
+37.531882,-77.434462,llm_site,PIPE,,Boat 1 standby Pipeline 2 pts unk activity canc no incident RTS,high,ollama:qwen2.5:14b,f0e62123631e
+37.531882,-77.434462,llm_site,PIPE,,Swimmer at Pipeline Rapids,high,ollama:qwen2.5:14b,0894e40fe3ae
+,,unplaced,,,"Note: E16 1000, 3 tubers hung on submerged rocks mid-channel as water rose fast. Removed from harm by rope team to right bank. 1 pt w/ ankle injury, EMS care, transported.",low,ollama:qwen2.5:14b,4b8b36a77ecb
+,,unplaced,,,Note: 1200 E12 dispatched for canoe reported overturned. Canceled en route by ECC. RTS.,low,ollama:qwen2.5:14b,96b6edd6cafa
+,,unplaced,,,"Note: Boat 1 EMS care for 2 rafters, no PFDs, minor inj. Investigated.",low,ollama:qwen2.5:14b,7fe3f708cd40
+37.559948,-77.575019,llm_site,BOSH,,Tuber no PFD at Bosher,high,ollama:qwen2.5:14b,82774f9b3e65
+,,llm_off_list,,left bank,"Located on left bank, no rescue needed. No inj.",low,ollama:qwen2.5:14b,9eeaafa071af
+37.530692,-77.454065,llm_what3words,,meadow canoe bank,"1900 tuber hung up on submerged rocks at ///meadow.canoe.bank, high water after rise. E12 removed pt from harm, EMS care, injury.",high,ollama:qwen2.5:14b,4f071e63b446
+37.530741,-77.455404,llm_site,BELLE,,"Caller reported Belle Isle. E12 stood by, 2 pts turned up at ///saddle.cedar.necatr, no assist needed.",high,ollama:qwen2.5:14b,b3e21a5f92e1
+37.520293,-77.417614,llm_site,ANC,,"E12 EMS care 3 tubers at Ancarrows, minor inj. Investigated.",high,ollama:qwen2.5:14b,9b2710624ae1
+37.52716,-77.469861,llm_site,REEDY,,Boat 1 EMS eval 2 tubers approx 250 yds upstream of Reedy Crk.,high,ollama:qwen2.5:14b,a873f8eae09c
+37.520293,-77.417614,llm_site,ANC,,"Kayaker was at Ancarrow's Landing, no PFD.",high,ollama:qwen2.5:14b,3459614de4aa
+37.531882,-77.434462,llm_site,PIPE,,Pipeline,high,ollama:qwen2.5:14b,7583cbf2bde2
+37.552224,-77.517472,llm_site,PONY,,"E16 investigated 2 at Pony Pasture, no PFDs, inexperienced. No incident found.",low,ollama:qwen2.5:14b,1380a077a597
+37.52791,-77.4334,llm_gps,,,E01 2 tubers no PFD N37.52791 W77.43340 canc enroute RTS,high,ollama:qwen2.5:14b,f98b02709a48
+37.52716,-77.469861,llm_site,REEDY,,pts self-extricated at Reedy Creek on submerged rocks,high,ollama:qwen2.5:14b,d715e6106432
+37.52716,-77.469861,llm_site,REEDY,,"Note: Boat 1 standby Reedy Creek for 2 rafters. Info given to public on conditions, no injury.",high,ollama:qwen2.5:14b,f441264aa45a
+,,unplaced,,,///heron.anchor.falcon all located ok no rescue needed RTS,high,ollama:qwen2.5:14b,26ec746fa23e
+,,unplaced,,,Pt home 700 blk N 25th St per RP. No incident found at Brown's Island.,low,ollama:qwen2.5:14b,7e0fd3c09e6a
+37.56104,-77.54073,llm_gps,,,"Note: E12 assisted 2 canoeists at N37.56104 W77.54073. Investigated, no injury.",high,ollama:qwen2.5:14b,32da8968db68
+37.520293,-77.417614,llm_site,ANC,,Kayaker pinned on submerged rocks approx 150 yds below Ancarrow's Landing,high,ollama:qwen2.5:14b,f1ca56b1d423
+37.559948,-77.575019,llm_site,BOSH,,"Raft w/ 2 in trouble at Bosher Dam. Boat 1 removed both from harm, EMS care for injuries.",high,ollama:qwen2.5:14b,223209542da9
+37.530053,-77.454767,llm_what3words,,drift.maple.nectar,"E12 EMS eval 2 tubers at ///drift.maple.nectar, no injuries. Investigated.",high,ollama:qwen2.5:14b,d311f2cd6573
+37.552224,-77.517472,llm_site,PONY,,"1000 E01 search for 2 at Pony Pasture after rapid rise, high water. Recovery ops, bodies recovered, EMS on scene. Fatality x2.",high,ollama:qwen2.5:14b,a99e838c61da
+37.5274,-77.43331,llm_gps,,,"Cancelled, no incident found.",low,ollama:qwen2.5:14b,88a86fc772d0
+37.552224,-77.517472,llm_site,PONY,,2 swimmers at the Pony needed help getting out.,high,ollama:qwen2.5:14b,469c8cd95413
+37.551909,-77.51697,llm_what3words,,pebble hollow quiet,"Note: Boat 1 EMS care 3 tubers at ///pebble.hollow.quiet, river rising. Minor inj, investigated.",high,ollama:qwen2.5:14b,c1bb3f5097bc
+37.520293,-77.417614,llm_site,ANC,,E12 assisted 2 swimmers at Ancarrow's boat ramp.,high,ollama:qwen2.5:14b,f4fa56cc6251
+37.561655,-77.542582,llm_site,HUG,,E16 2 kayakers Huguenot flat water assist invest no inj RTS,high,ollama:qwen2.5:14b,64803bc88735
+37.530741,-77.455404,llm_site,BELLE,,4 tubers at Belle Isle.,high,ollama:qwen2.5:14b,b9b50d1ba8e9
+37.530741,-77.455404,llm_site,BELLE,,"E16 stood by for 2 SUP riders at Belle Isle, no PFDs. Gave info to public, no inj.",high,ollama:qwen2.5:14b,c0acdd2b6bec
+,,unplaced,,,"Note: E05 1500 assisted 3 waders, no PFDs, unable to get back from gravel bar mid-river. Walked to right bank w/ crew. Investigated. No inj.",low,ollama:qwen2.5:14b,25cc79141286
+37.530741,-77.455404,llm_site,BELLE,,"E01 assisted 2 tubers at Belle Isle, ETOH suspected. Investigated, no injury.",high,ollama:qwen2.5:14b,66495899aa61
+,,unplaced,,,"record_location tool called for further details on the location of the eddy where the rafters were stuck, but the note does not specify a known river site or exact coordinates.",low,ollama:qwen2.5:14b,a71ae73dfc7b
+,,unplaced,,,"Pt found on rock mid-channel, removed from harm to right bank. Minor injury, EMS.",low,ollama:qwen2.5:14b,71e1e2c3415a
+37.528301,-77.475311,llm_site,42ND,,42nd st fast rise pt removed EMS eval no inj RTS,high,ollama:qwen2.5:14b,039d76f70353
+37.559948,-77.575019,llm_site,BOSH,,Bosher Dam requested assist.,high,ollama:qwen2.5:14b,95e5e7128629
+37.552224,-77.517472,llm_site,PONY,,E01 2 SUP pony pasture novices EMS care minor inj invest RTS,high,ollama:qwen2.5:14b,369fe767c421

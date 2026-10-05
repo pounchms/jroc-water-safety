@@ -1,0 +1,40 @@
+map_lat,map_lon,location_method,llm_site_id,llm_other_place,llm_evidence,llm_confidence,llm_model,note_sha
+37.552224,-77.517472,llm_site,PONY,,E13/R1 made contact w male on rocks at Pony.,high,ollama:qwen2.5:14b,3e7d6da99731
+,,llm_off_list,,river rt bank,R1 reached subj clinging to tree on river rt bank.,high,ollama:qwen2.5:14b,9a3b4df84364
+37.530741,-77.455404,llm_site,BELLE,,"E2/R1 located pt on Belle upstream side, ankle inj after getting washed off rock. packaged and carried out.",high,ollama:qwen2.5:14b,1a89b35a4921
+,,llm_off_list,,Texas Beach,"R1/E12 found kayaker at Texas Beach, pt out of water on arrival to crew, eval only.",high,ollama:qwen2.5:14b,c3c41bbf822b
+37.531882,-77.434462,llm_site,PIPE,,"R1 located subj at Pipeline, pulled to catwalk access.",high,ollama:qwen2.5:14b,75f32e0de199
+37.561655,-77.542582,llm_site,HUG,,crew reached pt mid channel and assisted back in.,high,ollama:qwen2.5:14b,560af6c070c6
+37.528301,-77.475311,llm_site,42ND,,R1 located 1 on rock shelf off 42nd.,high,ollama:qwen2.5:14b,febd6d91769a
+37.530741,-77.455404,llm_site,BELLE,,E13 crew reached female seated on rock mid river. cold/tired only. moved to shore and turned over for eval.,high,ollama:qwen2.5:14b,4c8b7525fda8
+37.532563,-77.441084,llm_site,BROWN,,E1/R1 made contact Browns Is south side. pt had fallen from tube and swam to rocks. assisted up bank.,high,ollama:qwen2.5:14b,cfdc9f4ce585
+,,llm_off_list,,Great Shiplock Park shoreline,"E12/R1 located 2 subjects at Great Shiplock Park shoreline after canoe swamped. both ambulatory, checked by EMS.",high,ollama:qwen2.5:14b,85f93a3ebc97
+37.558554,-77.526598,llm_site,ZDAM,,R1 found paddleboarder hung up approx 200 yds below Z-Dam. removed from strainer area and brought river left.,high,ollama:qwen2.5:14b,68dbe05e4da6
+37.52716,-77.469861,llm_site,REEDY,,"E17/R1 at Reedy access, located male on opposite bank. boat crew crossed, assisted back. no injury.",high,ollama:qwen2.5:14b,7c328b2954c6
+37.528074,-77.43403,llm_site,MAYO,,"T2 staged Mayo, R1 located subj just upriver of Mayo Bridge and removed from water.",high,ollama:qwen2.5:14b,5de83f51d759
+37.559948,-77.575019,llm_site,BOSH,,"E20/R1 located fisherman below Bosher, stranded on rock after water came up. ferried to bank.",high,ollama:qwen2.5:14b,a89cc273739d
+,,unplaced,,,"R1 made contact w 1 subj chest deep holding onto boulder. assisted into boat, eval completed, no transport.",low,ollama:qwen2.5:14b,f90d7819c40e
+37.533637,-77.445376,llm_site,TRED,,E1/R1 found pt along Canal Walk by Tredegar after exiting river on own.,high,ollama:qwen2.5:14b,ccec6a4ecf2f
+37.520293,-77.417614,llm_site,ANC,,"E17 and R1 located kayaker at Ancarrows ramp, exhausted after self-rescue. assisted from boat, checked, released.",high,ollama:qwen2.5:14b,29eba0683787
+,,llm_off_list,,Potterfield bridge south landing,"R1 contacted swimmer at Potterfield bridge south landing. pt had been swept off rocks, made footing at pier, assisted out.",high,ollama:qwen2.5:14b,3911114f1e2d
+37.552224,-77.517472,llm_site,PONY,,"E13 to Pony Pasture Rapids Park. 1 tuber stuck river center on exposed rock, R1 removed to north bank. no inj.",high,ollama:qwen2.5:14b,9eaf2c98c9ba
+37.528301,-77.475311,llm_site,42ND,,E17 checked 42nd access while R1 worked upstream and located pt at 42nd St rocks.,high,ollama:qwen2.5:14b,bc8a301e1b2d
+37.530741,-77.455404,llm_site,BELLE,,"R1/E2 reached subject on Belle lower tip. kayak overturned, pt unable cross channel. boat transport to shore.",high,ollama:qwen2.5:14b,5bbb13f5cbad
+37.561655,-77.542582,llm_site,HUG,,"E20 found 2 subjects off Hug, one in water holding canoe. R1 assisted both to shoreline, no medical need.",high,ollama:qwen2.5:14b,b3d20a763a91
+,,llm_off_list,,Rocketts Landing,"E12/R1 made contact at Rocketts Landing river edge. jet ski passenger had swam in after separation, eval no inj.",high,ollama:qwen2.5:14b,b3841473f56d
+37.531882,-77.434462,llm_site,PIPE,,"R1 located male at Pipeline Rapids, hanging onto exposed rock river left. secured w PFD and walked/swim assisted to bank.",high,ollama:qwen2.5:14b,4824f947b8ca
+37.532563,-77.441084,llm_site,BROWN,,R1 found pt on south bank at Brown's Island.,high,ollama:qwen2.5:14b,05cb9f18522a
+37.559948,-77.575019,llm_site,BOSH,,"pt located below dam river rt, conscious on rocks. assisted to access.",high,ollama:qwen2.5:14b,a3f210403cd5
+,,unplaced,,,record_location tool called for further details on the exact location of the incident on the James River where the patient was found.,low,ollama:qwen2.5:14b,7c93c6beb612
+37.528074,-77.43403,llm_site,MAYO,,T2/R1 located subject under Mayo Bridge on pier footing. assisted into boat and taken to south side.,high,ollama:qwen2.5:14b,bcba89e4de63
+,,llm_off_list,,The Wetlands river access,"E12 and R1 found swimmer at The Wetlands river access. cramped up crossing channel, assisted to shore, refused EMS.",high,ollama:qwen2.5:14b,f23f4e15f386
+37.558554,-77.526598,llm_site,ZDAM,,subj approx 200 yards below Z-Dam on rock,high,ollama:qwen2.5:14b,4e6c1a4bdad5
+37.52716,-77.469861,llm_site,REEDY,,"E17 located tuber at Reedy Creek confluence, hung in brush river edge. removed from water, minor scrapes.",high,ollama:qwen2.5:14b,100ff13ff547
+37.533637,-77.445376,llm_site,TRED,,"E1/R1 contact made Tredegar side behind old hydro area. pt exhausted from swim, assisted up embankment.",high,ollama:qwen2.5:14b,0f6a39d3f94e
+37.520293,-77.417614,llm_site,ANC,,"E17 staged at Ancarrows, R1 searched upriver and located owner at Ancarrows shoreline. pt ok, reunited w boat later.",high,ollama:qwen2.5:14b,4631ec0f1c5e
+37.533637,-77.445376,llm_site,TRED,,"R1/E12 located male at Floodwall Walk river side, unable climb back up after exiting water. ladder assist, EMS checked.",high,ollama:qwen2.5:14b,e1584cf101c4
+,,unplaced,,,"E17/R1 located conscious pt on bank after reported submersion. wet/cold, blanket and EMS eval, no transport.",low,ollama:qwen2.5:14b,bd9799cd8223
+37.552224,-77.517472,llm_site,PONY,,subj located Pony rocks river center and assisted off.,high,ollama:qwen2.5:14b,bbf496ea8cde
+37.561655,-77.542582,llm_site,HUG,,"E20/R1 located paddleboarder at Huguenot Flatwater, wind/current pushed pt into brush. disentangled and escorted back.",high,ollama:qwen2.5:14b,19902c2aad73
+37.530741,-77.455404,llm_site,BELLE,,"R1 located pt Belle Isle north channel rocks, assisted to shore, no inj.",high,ollama:qwen2.5:14b,763342545d63
+37.531882,-77.434462,llm_site,PIPE,,subj on rock above drop. removed by boat crew.,high,ollama:qwen2.5:14b,3a1cb190fc00

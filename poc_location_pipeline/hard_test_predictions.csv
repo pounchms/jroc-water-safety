@@ -1,0 +1,39 @@
+note_id,category,gold_site,note,pred_rules,pred_llm
+H01,negation_correction,REEDY,"Dispatched to Pony Pasture per caller, but pt actually located at Reedy Creek. 1 kayaker, no injuries.",PONY,REEDY
+H02,negation_correction,BROWN,Not at Belle Isle as dispatched - found pt on rocks off Brown's Island. Rope team deployed.,BROWN,BROWN
+H03,negation_correction,MAYO,"Searched Z-Dam area, no pts found there. Pt later located clinging to pilings at Mayo Bridge.",MAYO,MAYO
+H04,negation_correction,PIPE,Initial report said Tredegar; corrected by 2nd caller to Pipeline Rapids. 2 tubers stranded.,PIPE,PIPE
+H05,negation_correction,HUG,"Bosher Dam was ruled out. Pt found in Huguenot flatwater section, cold exposure.",HUG,HUG
+H06,two_places,PONY,"Staged at 42nd St entrance, launched boat upstream to Pony Pasture where kayaker was pinned.",PONY,PONY
+H07,two_places,ANC,"Pt swept from Pipeline Rapids, reached and recovered by boat at Ancarrow's Landing.",ANC,ANC
+H08,two_places,BELLE,Units staged at Tredegar lot. Pt stranded on rocks below Hollywood Rapids.,BELLE,BELLE
+H09,two_places,BOSH,E12 diverted from a Mayo Bridge traffic accident. Pt in water just below Bosher Dam.,MAYO,BOSH
+H10,two_places,ANC,Pt is a Belle Isle regular per family; today's incident at Ancarrow's boat ramp.,BELLE,ANC
+H11,two_places,REEDY,Pt lives on Pony Pasture Rd in Chesterfield. Found in the water at Reedy Creek.,PONY,REEDY
+H12,two_places,ZDAM,"Boat 1 launched from Brown's Island, reached pt at the Z-Dam.",BROWN,ZDAM
+H13,off_list,OFFLIST,"Swimmer in distress at Texas Beach, walked out with crew assistance.",,
+H14,off_list,OFFLIST,Pt on rocks near Williams Island Dam. Rope rescue.,,
+H15,off_list,OFFLIST,"North Bank Trail, pt fell from rocks into river edge.",,
+H16,off_list,OFFLIST,"Kayak overturned at Great Shiplock Park ramp, 1 pt out of water.",,
+H17,off_list,OFFLIST,"Pt found at the Nickel Bridge, eddy on river right.",,
+H18,abbreviation,PONY,"PP rapids, 2 tubers stuck on a rock. Handed off to EMS.",,PONY
+H19,abbreviation,HUG,"Kayaker flipped near Huguenot. Self-rescued, eval only.",,HUG
+H20,abbreviation,BOSH,"At Bosher's, fisherman slipped below the dam face.",BOSH,BOSH
+H21,abbreviation,42ND,"42nd st ent., hiker fell on trail down to water.",42ND,42ND
+H22,abbreviation,ZDAM,Pt stuck on the Z. Boat 1 retrieved.,,ZDAM
+H23,abbreviation,BELLE,"Belle Isle ftbrdg area, pt in water under the footbridge.",BELLE,BELLE
+H24,relative_direction,42ND,"About 200 yds below the 42nd St entrance, river left, pt on a ledge.",42ND,42ND
+H25,relative_direction,MAYO,"Just upstream of Mayo Bridge, pt holding a bridge pier.",MAYO,
+H26,relative_direction,PIPE,"Off the end of the pipeline walkway, pt in rapids.",PIPE,PIPE
+H27,relative_direction,REEDY,"Across the river from the Reedy Creek entrance, pt on the island side.",REEDY,REEDY
+H28,no_location,NONE,"Pt on rocks mid-river, exact loc unknown at time of report.",,
+H29,no_location,NONE,"Dispatched for swimmer in distress, cancelled en route by caller.",,
+H30,no_location,NONE,"Water rescue, pt uninjured, cleared. Location per CAD.",,
+H31,no_location,NONE,"Caller heard yelling from the river, search negative, returned to service.",,
+H32,no_location,NONE,Pt says he usually paddles at Pony Pasture; today's location not recorded.,PONY,
+H33,gps_with_noise,PONY,"GPS 37.56078,-77.53590 per caller's phone; caller said it was near Reedy Creek but coordinates confirmed.",HUG,HUG
+H34,gps_with_noise,ANC,Coords from boat GPS: N37.51455 W77.42124.,ANC,ANC
+H35,typo,BROWN,"Loc Brwons Iland, 1 wader, eval only.",BROWN,BROWN
+H36,typo,TRED,"Near Tredgar beach, pt cut foot on rocks.",TRED,TRED
+H37,typo,ANC,"Ancarow boat ramp, capsized canoe.",ANC,ANC
+H38,typo,HUG,"Hugenot flat water, SUP paddler hypothermic.",HUG,HUG

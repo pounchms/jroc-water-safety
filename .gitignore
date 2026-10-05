@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Location pipeline: backups, regenerable or bulky working files
+poc_location_pipeline/_pre_*/
+poc_location_pipeline/gen_cache.json
+poc_location_pipeline/gen_prompts*.jsonl
+poc_location_pipeline/gen_answers*.jsonl
+# internal file: what3words addresses next to coordinates (licence 6.3b in a live run); regenerate with extract_locations.py
+poc_location_pipeline/incidents_geocoded.csv
+
+# Never commit credentials (see JROC_Handoff_Guide.md, kept outside this repo)
+*.json.key
+credentials*.json
+service_account*.json
+.env
+poc_location_pipeline/jroc_pipeline_diagram.png

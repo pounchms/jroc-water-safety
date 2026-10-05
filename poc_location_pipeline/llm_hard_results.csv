@@ -1,0 +1,39 @@
+map_lat,map_lon,location_method,llm_site_id,llm_other_place,llm_evidence,llm_confidence,llm_model
+37.52716,-77.469861,llm_site,REEDY,,pt actually located at Reedy Creek,high,ollama:qwen2.5:14b
+37.532563,-77.441084,llm_site,BROWN,,pt on rocks off Brown's Island,high,ollama:qwen2.5:14b
+37.528074,-77.43403,llm_site,MAYO,,Pt later located clinging to pilings at Mayo Bridge.,high,ollama:qwen2.5:14b
+37.531882,-77.434462,llm_site,PIPE,,Note mentions Pipeline Rapids as the corrected location where the patients were stranded.,high,ollama:qwen2.5:14b
+37.561655,-77.542582,llm_site,HUG,,"Pt found in Huguenot flatwater section, cold exposure.",high,ollama:qwen2.5:14b
+37.552224,-77.517472,llm_site,PONY,,Pony Pasture where kayaker was pinned.,high,ollama:qwen2.5:14b
+37.520293,-77.417614,llm_site,ANC,,"Pt swept from Pipeline Rapids, reached and recovered by boat at Ancarrow's Landing.",high,ollama:qwen2.5:14b
+37.530741,-77.455404,llm_site,BELLE,,Pt stranded on rocks below Hollywood Rapids.,high,ollama:qwen2.5:14b
+37.559948,-77.575019,llm_site,BOSH,,Pt in water just below Bosher Dam.,high,ollama:qwen2.5:14b
+37.520293,-77.417614,llm_site,ANC,,pt's location during the incident is mentioned as Ancarrow's boat ramp.,high,ollama:qwen2.5:14b
+37.52716,-77.469861,llm_site,REEDY,,Found in the water at Reedy Creek.,high,ollama:qwen2.5:14b
+37.558554,-77.526598,llm_site,ZDAM,,pt at the Z-Dam,high,ollama:qwen2.5:14b
+,,llm_off_list,,Texas Beach,"Swimmer in distress at Texas Beach, walked out with crew assistance.",high,ollama:qwen2.5:14b
+,,llm_off_list,,Williams Island Dam,Pt on rocks near Williams Island Dam. Rope rescue.,low,ollama:qwen2.5:14b
+,,llm_off_list,,North Bank Trail,pt fell from rocks into river edge at North Bank Trail,low,ollama:qwen2.5:14b
+,,llm_off_list,,Great Shiplock Park ramp,"Kayak overturned at Great Shiplock Park ramp, 1 pt out of water.",low,ollama:qwen2.5:14b
+,,llm_off_list,,Nickel Bridge,"Pt found at the Nickel Bridge, eddy on river right.",high,ollama:qwen2.5:14b
+37.552224,-77.517472,llm_site,PONY,,"PP rapids, 2 tubers stuck on a rock.",high,ollama:qwen2.5:14b
+37.561655,-77.542582,llm_site,HUG,,"Note: Kayaker flipped near Huguenot. Self-rescued, eval only.",high,ollama:qwen2.5:14b
+37.559948,-77.575019,llm_site,BOSH,,"At Bosher's, fisherman slipped below the dam face.",high,ollama:qwen2.5:14b
+37.528301,-77.475311,llm_site,42ND,,"42nd st ent., hiker fell on trail down to water.",high,ollama:qwen2.5:14b
+37.558554,-77.526598,llm_site,ZDAM,,Pt stuck on the Z.,high,ollama:qwen2.5:14b
+37.530741,-77.455404,llm_site,BELLE,,"Belle Isle ftbrdg area, pt in water under the footbridge.",high,ollama:qwen2.5:14b
+37.528301,-77.475311,llm_site,42ND,,"About 200 yds below the 42nd St entrance, river left, pt on a ledge.",high,ollama:qwen2.5:14b
+,,llm_off_list,,upstream of Mayo Bridge,pt holding a bridge pier. Just upstream of Mayo Bridge,high,ollama:qwen2.5:14b
+37.531882,-77.434462,llm_site,PIPE,,pt in rapids. Off the end of the pipeline walkway,high,ollama:qwen2.5:14b
+37.52716,-77.469861,llm_site,REEDY,,pt on the island side. Across the river from the Reedy Creek entrance,high,ollama:qwen2.5:14b
+,,unplaced,,,"Pt on rocks mid-river, exact loc unknown at time of report.",low,ollama:qwen2.5:14b
+,,unplaced,,,"Dispatched for swimmer in distress, cancelled en route by caller.",low,ollama:qwen2.5:14b
+,,unplaced,,,"Note: Water rescue, pt uninjured, cleared. Location per CAD.",low,ollama:qwen2.5:14b
+,,unplaced,,,"Caller heard yelling from the river, search negative, returned to service.",low,ollama:qwen2.5:14b
+,,unplaced,,,Pt says he usually paddles at Pony Pasture; today's location not recorded.,low,ollama:qwen2.5:14b
+37.56078,-77.5359,llm_gps,REEDY,,"GPS 37.56078,-77.53590 per caller's phone; caller said it was near Reedy Creek but coordinates confirmed.",high,ollama:qwen2.5:14b
+37.51455,-77.42124,llm_gps,ZDAM,,Coords from boat GPS: N37.51455 W77.42124.,high,ollama:qwen2.5:14b
+37.532563,-77.441084,llm_site,BROWN,,Loc Brwons Iland,high,ollama:qwen2.5:14b
+37.533637,-77.445376,llm_site,TRED,,"Near Tredgar beach, pt cut foot on rocks.",high,ollama:qwen2.5:14b
+37.520293,-77.417614,llm_site,ANC,,"Ancarow boat ramp, capsized canoe.",high,ollama:qwen2.5:14b
+37.561655,-77.542582,llm_site,HUG,,"Hugenot flat water, SUP paddler hypothermic.",high,ollama:qwen2.5:14b
